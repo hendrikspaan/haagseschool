@@ -1,0 +1,98 @@
+*{
+  font-family: 'Ping Regular',sans-serif;
+}
+
+.main-title{
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 3;
+  color: #FFFFFF;
+  background-color:#870d4d;
+  text-transform: uppercase;
+  letter-spacing: 1.67px;
+  text-align: center;
+}
+
+.header{
+  background-color: #caa009;
+  display: flex;
+  margin : 10px;
+  padding : 10px;
+}
+
+.header div{
+  margin : 5px;
+}
+
+.menu_schilders {  
+  background-color: #f3edd1;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 2.5em;
+  list-style: none;
+}
+
+.header .menu{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f3edd1;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 2.5em;
+}
+
+.menu-item{
+  color: black; 
+}
+
+.schilders{  
+  border: 1px solid grey;
+  margin : 10px;
+}
+.schilders  {
+  border: 4px solid grey;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+img {
+  max-width: 220px;
+  max-height: 150px;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+tr:hover {background-color: yellow;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+th{
+  color: #FFFFFF;
+  background-color: #caa009;
+  -webkit-font-smoothing: subpixel-antialiased
+}
