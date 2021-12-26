@@ -1,6 +1,7 @@
 const path = require('path');
 const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: "development",
@@ -13,6 +14,11 @@ module.exports = {
     new HtmlWebpackPlugin({
      title: 'Collectie Hendrik Spaan',
     }),
+    new CopyPlugin({
+      patterns: [
+          { from: './src/images', to: './images' },
+      ],
+  })
   ],
   output: {
     filename: 'bundle.js',

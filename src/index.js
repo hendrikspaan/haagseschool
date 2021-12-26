@@ -3,7 +3,6 @@ import './style.css';
 import json from './data/paintings.json';
 
 
-import hendrik_spaan from './images/hendrik_spaan.jpg';
 const schilders = new Map();
 const fotos = new Map();
 
@@ -323,7 +322,7 @@ function figure(parent) {
   const figure = div.appendChild(document.createElement('figure'));
   figure.style = "width:100px";
   const img = figure.appendChild(document.createElement('img'));
-  img.src = hendrik_spaan;
+  img.src = './images/hendrik_spaan.jpg'
   const capt = figure.appendChild(document.createElement('figcaption'));
   capt.innerText = json.naam + " (" + json.tijd + ")"
 }
