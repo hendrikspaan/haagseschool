@@ -30,7 +30,7 @@ function hoofdMenu(parent) {
 function schildersMenu3(parent) {
 
   const title = parent.appendChild(document.createElement('h1'));
-  title.innerText = "Schilders van de Haagse school"
+  title.innerText = "Schilders van de Haagse School"
   title.classList.add("title-schilders")
   const schildersContainer = parent.appendChild(document.createElement('div'));
   schildersContainer.classList.add("schilders-container")
@@ -39,15 +39,13 @@ function schildersMenu3(parent) {
     const schilder = json.schilders[i].schilder;
     const schildersItem = schildersContainer.appendChild(document.createElement('div'))
     schildersItem.classList.add("schilders-item")
-    const foto = "./images/" + schilder.id + ".jpg"
-    const caption = schilder.naam + " (" + schilder.tijd + ")"
 
     const figure = schildersItem.appendChild(document.createElement('figure'));
     //  figure.style = "width:150px";
     const img = figure.appendChild(document.createElement('img'));
-    img.src = foto;
+    img.src =  "./images/" + schilder.id + ".jpg";
     const capt = figure.appendChild(document.createElement('figcaption'));
-    capt.innerText = caption;
+    capt.innerText = schilder.naam + " (" + schilder.tijd + ")"
   }
 }
 
