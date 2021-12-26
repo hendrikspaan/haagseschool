@@ -3,131 +3,131 @@ import './style.css';
 import json from './data/paintings.json';
 
 
-import hendrik_spaan from './data/hendrik_spaan.jpg';
+import hendrik_spaan from './images/hendrik_spaan.jpg';
 const schilders = new Map();
 const fotos = new Map();
 
-import akkeringa from './data/schilders/akkeringa.jpg';
+import akkeringa from './images/akkeringa.jpg';
 schilders.set("akkeringa", akkeringa);
 
-import akkeringa1 from './data/schilderijen/akkeringa1.jpg';
+import akkeringa1 from './images/akkeringa1.jpg';
 fotos.set("akkeringa1", akkeringa1);
-import akkeringa2 from './data/schilderijen/akkeringa2.jpg';
+import akkeringa2 from './images/akkeringa2.jpg';
 fotos.set("akkeringa2", akkeringa2);
-import akkeringa3 from './data/schilderijen/akkeringa3.jpg';
+import akkeringa3 from './images/akkeringa3.jpg';
 fotos.set("akkeringa3", akkeringa3);
 
-import arntzenius from './data/schilders/arntzenius.jpg';
+import arntzenius from './images/arntzenius.jpg';
 schilders.set("arntzenius", arntzenius);
-import arntzenius1 from './data/schilderijen/arntzenius1.jpg';
+import arntzenius1 from './images/arntzenius1.jpg';
 fotos.set("arntzenius1", arntzenius1);
-import arntzenius2 from './data/schilderijen/arntzenius2.jpg';
+import arntzenius2 from './images/arntzenius2.jpg';
 fotos.set("arntzenius2", arntzenius2);
-import arntzenius3 from './data/schilderijen/arntzenius3.jpg';
+import arntzenius3 from './images/arntzenius3.jpg';
 fotos.set("arntzenius3", arntzenius3);
-import arntzenius4 from './data/schilderijen/arntzenius4.jpg';
+import arntzenius4 from './images/arntzenius4.jpg';
 fotos.set("arntzenius4", arntzenius4);
-import arntzenius5 from './data/schilderijen/arntzenius5.jpg';
+import arntzenius5 from './images/arntzenius5.jpg';
 fotos.set("arntzenius5", arntzenius5);
-import arntzenius6 from './data/schilderijen/arntzenius6.jpg';
+import arntzenius6 from './images/arntzenius6.jpg';
 fotos.set("arntzenius6", arntzenius6);
 
-//import  daalhoff from './data/schilders/daalhoff.jpg';
+//import  daalhoff from './images/daalhoff.jpg';
 //schilders.set(" daalhoff",  daalhoff);
-import daalhoff1 from './data/schilderijen/daalhoff1.jpg';
+import daalhoff1 from './images/daalhoff1.jpg';
 fotos.set("daalhoff1", daalhoff1);
-import daalhoff2 from './data/schilderijen/daalhoff2.jpg';
+import daalhoff2 from './images/daalhoff2.jpg';
 fotos.set("daalhoff2", daalhoff2);
-import daalhoff3 from './data/schilderijen/daalhoff3.jpg';
+import daalhoff3 from './images/daalhoff3.jpg';
 fotos.set("daalhoff3", daalhoff3);
-import daalhoff4 from './data/schilderijen/daalhoff4.jpg';
+import daalhoff4 from './images/daalhoff4.jpg';
 fotos.set("daalhoff4", daalhoff4);
-import daalhoff5 from './data/schilderijen/daalhoff5.jpg';
+import daalhoff5 from './images/daalhoff5.jpg';
 fotos.set("daalhoff5", daalhoff5);
-import daalhoff6 from './data/schilderijen/daalhoff6.jpg';
+import daalhoff6 from './images/daalhoff6.jpg';
 fotos.set("daalhoff6", daalhoff6);
 
-import dankmeijer from './data/schilders/dankmeijer.jpg';
+import dankmeijer from './images/dankmeijer.jpg';
 schilders.set("dankmeijer", dankmeijer);
-import dankmeijer1 from './data/schilderijen/dankmeijer1.jpg';
+import dankmeijer1 from './images/dankmeijer1.jpg';
 fotos.set("dankmeijer1", dankmeijer1);
-import dankmeijer2 from './data/schilderijen/dankmeijer2.jpg';
+import dankmeijer2 from './images/dankmeijer2.jpg';
 fotos.set("dankmeijer2", dankmeijer2);
-import dankmeijer3 from './data/schilderijen/dankmeijer3.jpg';
+import dankmeijer3 from './images/dankmeijer3.jpg';
 fotos.set("dankmeijer3", dankmeijer3);
-import dankmeijer4 from './data/schilderijen/dankmeijer4.jpg';
+import dankmeijer4 from './images/dankmeijer4.jpg';
 fotos.set("dankmeijer4", dankmeijer4);
-import dankmeijer5 from './data/schilderijen/dankmeijer5.jpg';
+import dankmeijer5 from './images/dankmeijer5.jpg';
 fotos.set("dankmeijer5", dankmeijer5);
 
-import gabriel from './data/schilders/gabriel.jpg';
+import gabriel from './images/gabriel.jpg';
 schilders.set("gabriel", gabriel);
-import gabriel1 from './data/schilderijen/gabriel1.jpg';
+import gabriel1 from './images/gabriel1.jpg';
 fotos.set("gabriel1", gabriel1);
 
-//import hofker from './data/schilders/hofker.jpg';
+//import hofker from './images/hofker.jpg';
 //schilders.set("hofker", hofker);
-import hofker1 from './data/schilderijen/hofker1.jpg';
+import hofker1 from './images/hofker1.jpg';
 fotos.set("hofker1", hofker1);
-import hofker2 from './data/schilderijen/hofker2.jpg';
+import hofker2 from './images/hofker2.jpg';
 fotos.set("hofker2", hofker2);
-import hofker3 from './data/schilderijen/hofker3.jpg';
+import hofker3 from './images/hofker3.jpg';
 fotos.set("hofker3", hofker3);
 
-//import rueter from './data/schilders/rueter.jpg';
+//import rueter from './images/rueter.jpg';
 //schilders.set("rueter", rueter);
-import rueter1 from './data/schilderijen/rueter1.jpg';
+import rueter1 from './images/rueter1.jpg';
 fotos.set("rueter1", rueter1);
 
-import israels from './data/schilders/israels.jpg';
+import israels from './images/israels.jpg';
 schilders.set("israels", israels);
-import israels1 from './data/schilderijen/israels1.jpg';
+import israels1 from './images/israels1.jpg';
 fotos.set("israels1", israels1);
 
-import mauve from './data/schilders/mauve.jpg';
+import mauve from './images/mauve.jpg';
 schilders.set("mauve", mauve);
-import mauve1 from './data/schilderijen/mauve1.jpg';
+import mauve1 from './images/mauve1.jpg';
 fotos.set("mauve1", mauve1);
 
-import marism from './data/schilders/marism.jpg';
+import marism from './images/marism.jpg';
 schilders.set("marism", marism);
-import marism1 from './data/schilderijen/marism1.jpg';
+import marism1 from './images/marism1.jpg';
 fotos.set("marism1", marism1);
 
-import marisw from './data/schilders/marisw.jpg';
+import marisw from './images/marisw.jpg';
 schilders.set("marisw", marisw);
-import marisw1 from './data/schilderijen/marisw1.jpg';
+import marisw1 from './images/marisw1.jpg';
 fotos.set("marisw1", marisw1);
 
-import mesdag from './data/schilders/mesdag.jpg';
+import mesdag from './images/mesdag.jpg';
 schilders.set("mesdag", mesdag);
-import mesdag1 from './data/schilderijen/mesdag1.jpg';
+import mesdag1 from './images/mesdag1.jpg';
 fotos.set("mesdag1", mesdag1);
 
-import toorop from './data/schilders/toorop.jpg';
+import toorop from './images/toorop.jpg';
 schilders.set("toorop", toorop);
-import toorop1 from './data/schilderijen/toorop1.jpg';
+import toorop1 from './images/toorop1.jpg';
 fotos.set("toorop1", toorop1);
 
-//import  morel from './data/schilders/morel.jpg';
+//import  morel from './images/morel.jpg';
 //schilders.set(" morel",  morel);
-import morel1 from './data/schilderijen/morel1.jpg';
+import morel1 from './images/morel1.jpg';
 fotos.set("morel1", morel1);
 
-import weissenbruch from './data/schilders/weissenbruch.jpg';
+import weissenbruch from './images/weissenbruch.jpg';
 schilders.set("weissenbruch", weissenbruch);
-import weissenbruch1 from './data/schilderijen/weissenbruch1.jpg';
+import weissenbruch1 from './images/weissenbruch1.jpg';
 fotos.set("weissenbruch1", weissenbruch1);
 
-import zwart from './data/schilders/zwart.jpg';
+import zwart from './images/zwart.jpg';
 schilders.set("zwart", zwart);
-import zwart1 from './data/schilderijen/zwart1.jpg';
+import zwart1 from './images/zwart1.jpg';
 fotos.set("zwart1", zwart1);
-import zwart2 from './data/schilderijen/zwart2.jpg';
+import zwart2 from './images/zwart2.jpg';
 fotos.set("zwart2", zwart2);
-import zwart3 from './data/schilderijen/zwart3.jpg';
+import zwart3 from './images/zwart3.jpg';
 fotos.set("zwart3", zwart3);
-import zwart4 from './data/schilderijen/zwart4.jpg';
+import zwart4 from './images/zwart4.jpg';
 fotos.set("zwart4", zwart4);
 
 function mainTitle(div) {
