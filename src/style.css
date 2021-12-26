@@ -24,6 +24,20 @@
   margin : 5px;
 }
 
+.schilders-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  margin: 10px;
+}
+
+.schilders-item {
+  background-color: #f1f1f1;
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  text-align: center;
+}
 .menu_schilders {  
   background-color: #f3edd1;
   font-size: 0.8em;

@@ -4,13 +4,21 @@ import json from './data/paintings.json';
 
 
 import hendrik_spaan from './data/hendrik_spaan.jpg';
+const schilders = new Map();
 const fotos = new Map();
+
+import akkeringa from './data/schilders/akkeringa.jpg';
+schilders.set("akkeringa", akkeringa);
+
 import akkeringa1 from './data/schilderijen/akkeringa1.jpg';
 fotos.set("akkeringa1", akkeringa1);
 import akkeringa2 from './data/schilderijen/akkeringa2.jpg';
 fotos.set("akkeringa2", akkeringa2);
 import akkeringa3 from './data/schilderijen/akkeringa3.jpg';
 fotos.set("akkeringa3", akkeringa3);
+
+import arntzenius from './data/schilders/arntzenius.jpg';
+schilders.set("arntzenius", arntzenius);
 import arntzenius1 from './data/schilderijen/arntzenius1.jpg';
 fotos.set("arntzenius1", arntzenius1);
 import arntzenius2 from './data/schilderijen/arntzenius2.jpg';
@@ -24,7 +32,8 @@ fotos.set("arntzenius5", arntzenius5);
 import arntzenius6 from './data/schilderijen/arntzenius6.jpg';
 fotos.set("arntzenius6", arntzenius6);
 
-
+//import  daalhoff from './data/schilders/daalhoff.jpg';
+//schilders.set(" daalhoff",  daalhoff);
 import daalhoff1 from './data/schilderijen/daalhoff1.jpg';
 fotos.set("daalhoff1", daalhoff1);
 import daalhoff2 from './data/schilderijen/daalhoff2.jpg';
@@ -38,6 +47,8 @@ fotos.set("daalhoff5", daalhoff5);
 import daalhoff6 from './data/schilderijen/daalhoff6.jpg';
 fotos.set("daalhoff6", daalhoff6);
 
+import dankmeijer from './data/schilders/dankmeijer.jpg';
+schilders.set("dankmeijer", dankmeijer);
 import dankmeijer1 from './data/schilderijen/dankmeijer1.jpg';
 fotos.set("dankmeijer1", dankmeijer1);
 import dankmeijer2 from './data/schilderijen/dankmeijer2.jpg';
@@ -49,9 +60,13 @@ fotos.set("dankmeijer4", dankmeijer4);
 import dankmeijer5 from './data/schilderijen/dankmeijer5.jpg';
 fotos.set("dankmeijer5", dankmeijer5);
 
+import gabriel from './data/schilders/gabriel.jpg';
+schilders.set("gabriel", gabriel);
 import gabriel1 from './data/schilderijen/gabriel1.jpg';
 fotos.set("gabriel1", gabriel1);
 
+//import hofker from './data/schilders/hofker.jpg';
+//schilders.set("hofker", hofker);
 import hofker1 from './data/schilderijen/hofker1.jpg';
 fotos.set("hofker1", hofker1);
 import hofker2 from './data/schilderijen/hofker2.jpg';
@@ -59,34 +74,53 @@ fotos.set("hofker2", hofker2);
 import hofker3 from './data/schilderijen/hofker3.jpg';
 fotos.set("hofker3", hofker3);
 
+//import rueter from './data/schilders/rueter.jpg';
+//schilders.set("rueter", rueter);
 import rueter1 from './data/schilderijen/rueter1.jpg';
 fotos.set("rueter1", rueter1);
 
+import israels from './data/schilders/israels.jpg';
+schilders.set("israels", israels);
 import israels1 from './data/schilderijen/israels1.jpg';
 fotos.set("israels1", israels1);
 
+import mauve from './data/schilders/mauve.jpg';
+schilders.set("mauve", mauve);
 import mauve1 from './data/schilderijen/mauve1.jpg';
 fotos.set("mauve1", mauve1);
 
+import marism from './data/schilders/marism.jpg';
+schilders.set("marism", marism);
 import marism1 from './data/schilderijen/marism1.jpg';
 fotos.set("marism1", marism1);
 
+import marisw from './data/schilders/marisw.jpg';
+schilders.set("marisw", marisw);
 import marisw1 from './data/schilderijen/marisw1.jpg';
 fotos.set("marisw1", marisw1);
 
+import mesdag from './data/schilders/mesdag.jpg';
+schilders.set("mesdag", mesdag);
 import mesdag1 from './data/schilderijen/mesdag1.jpg';
 fotos.set("mesdag1", mesdag1);
 
+import toorop from './data/schilders/toorop.jpg';
+schilders.set("toorop", toorop);
 import toorop1 from './data/schilderijen/toorop1.jpg';
 fotos.set("toorop1", toorop1);
 
+//import  morel from './data/schilders/morel.jpg';
+//schilders.set(" morel",  morel);
 import morel1 from './data/schilderijen/morel1.jpg';
 fotos.set("morel1", morel1);
 
+import weissenbruch from './data/schilders/weissenbruch.jpg';
+schilders.set("weissenbruch", weissenbruch);
 import weissenbruch1 from './data/schilderijen/weissenbruch1.jpg';
 fotos.set("weissenbruch1", weissenbruch1);
 
-
+import zwart from './data/schilders/zwart.jpg';
+schilders.set("zwart", zwart);
 import zwart1 from './data/schilderijen/zwart1.jpg';
 fotos.set("zwart1", zwart1);
 import zwart2 from './data/schilderijen/zwart2.jpg';
@@ -109,16 +143,7 @@ function hoofdMenu(div) {
   figure(header)
   menu(header)
 
-  function figure(header) {
-    const div = header.appendChild(document.createElement('div'));
 
-    const figure = div.appendChild(document.createElement('figure'));
-    figure.style = "width:100px";
-    const img = figure.appendChild(document.createElement('img'));
-    img.src = hendrik_spaan;
-    const capt = figure.appendChild(document.createElement('figcaption'));
-    capt.innerText = json.naam + " (" + json.tijd + ")"
-  }
 
   function menu(header) {
     const menu = header.appendChild(document.createElement('div'));
@@ -135,6 +160,41 @@ function hoofdMenu(div) {
   }
 }
 
+
+function schildersMenu3(parent) {
+
+  const h1 = parent.appendChild(document.createElement('h1'));
+  h1.innerText="Schilders van de Haagse school"
+  const container = parent.appendChild(document.createElement('div'));
+  container.classList.add("schilders-container")
+
+  for (var i = 0; i < json.schilders.length; i++) {
+
+    const schilder = json.schilders[i].schilder;
+    const div3 = container.appendChild(document.createElement('div'));
+
+    div3.classList.add("schilders-item")
+    figure(div3, schilder)
+
+    function figure(parent, schilder) {
+      const div = parent.appendChild(document.createElement('div'));
+      const foto = schilders.get(schilder.id)
+      const caption = schilder.naam + " (" + schilder.tijd + ")"
+
+      if (foto == null) {
+        div.innerHTML = caption;
+      } else {
+        const figure = div.appendChild(document.createElement('figure'));
+        //  figure.style = "width:150px";
+        const img = figure.appendChild(document.createElement('img'));
+        img.src = foto;
+        const capt = figure.appendChild(document.createElement('figcaption'));
+        capt.innerText = caption;
+      }
+    }
+
+  }
+}
 
 function schildersMenu2(div) {
   const ul = div.appendChild(document.createElement('ul'));
@@ -251,8 +311,19 @@ function schildersMenu(div) {
 function site(div) {
   mainTitle(div)
   hoofdMenu(div)
-  schildersMenu(div)
+  schildersMenu3(div)
 }
 
 const div = document.body.appendChild(document.createElement('div'));
 site(div);
+
+function figure(parent) {
+  const div = parent.appendChild(document.createElement('div'));
+
+  const figure = div.appendChild(document.createElement('figure'));
+  figure.style = "width:100px";
+  const img = figure.appendChild(document.createElement('img'));
+  img.src = hendrik_spaan;
+  const capt = figure.appendChild(document.createElement('figcaption'));
+  capt.innerText = json.naam + " (" + json.tijd + ")"
+}
