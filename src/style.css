@@ -1,33 +1,61 @@
-*{
-  font-family: 'Ping Regular',sans-serif;
+:root {
+  --main-bg-color: #caa009;
+  --bg-color: #f3edd1;
 }
 
-.main-title{
+* {
+  font-family: 'Ping Regular', sans-serif;
+}
+
+.main-title {
   font-weight: bold;
   font-size: 1.1em;
   line-height: 3;
   color: #FFFFFF;
-  background-color:#870d4d;
+  background-color: #870d4d;
   text-transform: uppercase;
   letter-spacing: 1.67px;
   text-align: center;
 }
 
-.header{
-  background-color: #caa009;
+.header {
+  background-color: var(--main-bg-color);
   display: flex;
-  margin : 10px;
-  padding : 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.header div{
-  margin : 5px;
+.header div {
+  margin: 5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-color);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 2.5em;
+  padding: 10px;
+}
+
+.menu-item {
+  color: black;
+}
+
+.title-schilders {
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 .schilders-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: red;
+  background-color: var(--main-bg-color);
   margin: 10px;
 }
 
@@ -38,8 +66,9 @@
   margin: 10px;
   text-align: center;
 }
-.menu_schilders {  
-  background-color: #f3edd1;
+
+.menu_schilders {
+  background-color: red;
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 600;
@@ -47,26 +76,14 @@
   list-style: none;
 }
 
-.header .menu{  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f3edd1;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 2.5em;
-}
 
-.menu-item{
-  color: black; 
-}
 
-.schilders{  
+.schilders {
   border: 1px solid grey;
-  margin : 10px;
+  margin: 10px;
 }
-.schilders  {
+
+.schilders {
   border: 4px solid grey;
 }
 
@@ -77,6 +94,8 @@ figure {
   padding: 5px;
   max-width: 220px;
   margin: auto;
+  background-color: #f3edd1;
+
 }
 
 img {
@@ -97,15 +116,20 @@ th, td {
   text-align: left;
 }
 
-tr:hover {background-color: yellow;}
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {
+  background-color: yellow;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 th {
   background-color: #04AA6D;
   color: white;
 }
 
-th{
+th {
   color: #FFFFFF;
   background-color: #caa009;
   -webkit-font-smoothing: subpixel-antialiased

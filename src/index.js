@@ -3,66 +3,51 @@ import './style.css';
 import json from './data/paintings.json';
 
 
-function mainTitle(div) {
-  const title = div.appendChild(document.createElement('h1'));
+function mainTitle(parent) {
+  const title = parent.appendChild(document.createElement('h1'));
   title.classList.add("main-title")
   title.innerText = "Collectie van " + json.naam + " (" + json.tijd + ")"
 }
 
-function hoofdMenu(div) {
-  const header = div.appendChild(document.createElement('div'));
+function hoofdMenu(parent) {
+  const header = parent.appendChild(document.createElement('div'));
   header.classList.add("header")
 
   figure(header)
-  menu(header)
+  const menu = header.appendChild(document.createElement('div'));
+  menu.classList.add("menu")
 
-
-
-  function menu(header) {
-    const menu = header.appendChild(document.createElement('div'));
-    menu.classList.add("menu")
-
-    for (var i = 0; i < json.urls.length; i++) {
-      const a = menu.appendChild(document.createElement('a'));
-      a.classList.add("menu-item")
-      a.href = json.urls[i][1]
-      a.innerText = json.urls[i][0]
-      a.target = "_blank"
-    }
-
+  for (var i = 0; i < json.urls.length; i++) {
+    const a = menu.appendChild(document.createElement('a'));
+    a.classList.add("menu-item")
+    a.href = json.urls[i][1]
+    a.innerText = json.urls[i][0]
+    a.target = "_blank"
   }
 }
 
 
 function schildersMenu3(parent) {
 
-  const h1 = parent.appendChild(document.createElement('h1'));
-  h1.innerText = "Schilders van de Haagse school"
-  const container = parent.appendChild(document.createElement('div'));
-  container.classList.add("schilders-container")
+  const title = parent.appendChild(document.createElement('h1'));
+  title.innerText = "Schilders van de Haagse school"
+  title.classList.add("title-schilders")
+  const schildersContainer = parent.appendChild(document.createElement('div'));
+  schildersContainer.classList.add("schilders-container")
 
   for (var i = 0; i < json.schilders.length; i++) {
-
     const schilder = json.schilders[i].schilder;
-    const div3 = container.appendChild(document.createElement('div'));
+    const schildersItem = schildersContainer.appendChild(document.createElement('div'))
+    schildersItem.classList.add("schilders-item")
+    const foto = "./images/" + schilder.id + ".jpg"
+    const caption = schilder.naam + " (" + schilder.tijd + ")"
 
-    div3.classList.add("schilders-item")
-    figure(div3, schilder)
-
-    function figure(parent, schilder) {
-      const div = parent.appendChild(document.createElement('div'));
-      const foto = "./images/" + schilder.id + ".jpg"
-      const caption = schilder.naam + " (" + schilder.tijd + ")"
-
-      const figure = div.appendChild(document.createElement('figure'));
-      //  figure.style = "width:150px";
-      const img = figure.appendChild(document.createElement('img'));
-      img.src = foto;
-      const capt = figure.appendChild(document.createElement('figcaption'));
-      capt.innerText = caption;
-
-    }
-
+    const figure = schildersItem.appendChild(document.createElement('figure'));
+    //  figure.style = "width:150px";
+    const img = figure.appendChild(document.createElement('img'));
+    img.src = foto;
+    const capt = figure.appendChild(document.createElement('figcaption'));
+    capt.innerText = caption;
   }
 }
 
