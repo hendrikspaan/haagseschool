@@ -39,13 +39,14 @@ function schildersMenu3(parent) {
     const schilder = json.schilders[i].schilder;
     const schildersItem = schildersContainer.appendChild(document.createElement('div'))
     schildersItem.classList.add("schilders-item")
-
+/*
     const figure = schildersItem.appendChild(document.createElement('figure'));
     //  figure.style = "width:150px";
     const img = figure.appendChild(document.createElement('img'));
     img.src =  "./images/" + schilder.id + ".jpg";
     const capt = figure.appendChild(document.createElement('figcaption'));
-    capt.innerText = schilder.naam + " (" + schilder.tijd + ")"
+    */
+    schildersItem.innerHTML = schilder.naam + "<br> (" + schilder.tijd + ")"
   }
 }
 
