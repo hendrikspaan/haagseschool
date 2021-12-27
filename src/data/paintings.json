@@ -459,102 +459,7 @@
                 ]
             }
         },
-        {
-            "schilder": {
-                "id": "hofker",
-                "naam": "Willem Gerard Hofker",
-                "url": "https://nl.wikipedia.org/wiki/Wim_Hofker",
-                "tijd": "1902-1981",
-                "schilderijen": [
-                    {
-                        "id": 23,
-                        "naam": "Gezicht op Nes, Ameland",
-                        "gesigneerd": "ja",
-                        "jaar": "1950",
-                        "materiaal": "Conté, zwart en rood krijt op papier",
-                        "afmeting": [
-                            26,
-                            38
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    800,
-                                    1200
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 24,
-                        "naam": "Boerderij Ameland",
-                        "gesigneerd": "ja",
-                        "jaar": "1950",
-                        "materiaal": "Conté en zwart krijt op papier",
-                        "afmeting": [
-                            28,
-                            46
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    800,
-                                    1200
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 25,
-                        "naam": "Singel/hoek Wijde Vleisteeg in de zomer",
-                        "gesigneerd": "ja",
-                        "jaar": "1968",
-                        "materiaal": "Olie op doek",
-                        "afmeting": [
-                            49,
-                            64
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    7000,
-                                    9000
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "schilder": {
-                "id": "rueter",
-                "naam": "Maria Hofker-Rueter",
-                "url": "https://nl.wikipedia.org/wiki/Maria_Hofker-Rueter",
-                "tijd": "1902-1999",
-                "schilderijen": [
-                    {
-                        "id": 26,
-                        "naam": "Dennenappels",
-                        "gesigneerd": "ja",
-                        "jaar": "1975",
-                        "materiaal": "Aquarel",
-                        "afmeting": [
-                            25,
-                            34
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    300,
-                                    500
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
+     
         {
             "schilder": {
                 "id": "israels",
@@ -875,6 +780,102 @@
                                 "1": [
                                     600,
                                     800
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "hofker",
+                "naam": "Willem Gerard Hofker",
+                "url": "https://nl.wikipedia.org/wiki/Wim_Hofker",
+                "tijd": "1902-1981",
+                "schilderijen": [
+                    {
+                        "id": 23,
+                        "naam": "Gezicht op Nes, Ameland",
+                        "gesigneerd": "ja",
+                        "jaar": "1950",
+                        "materiaal": "Conté, zwart en rood krijt op papier",
+                        "afmeting": [
+                            26,
+                            38
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    800,
+                                    1200
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 24,
+                        "naam": "Boerderij Ameland",
+                        "gesigneerd": "ja",
+                        "jaar": "1950",
+                        "materiaal": "Conté en zwart krijt op papier",
+                        "afmeting": [
+                            28,
+                            46
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    800,
+                                    1200
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 25,
+                        "naam": "Singel/hoek Wijde Vleisteeg in de zomer",
+                        "gesigneerd": "ja",
+                        "jaar": "1968",
+                        "materiaal": "Olie op doek",
+                        "afmeting": [
+                            49,
+                            64
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    7000,
+                                    9000
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "rueter",
+                "naam": "Maria Hofker-Rueter",
+                "url": "https://nl.wikipedia.org/wiki/Maria_Hofker-Rueter",
+                "tijd": "1902-1999",
+                "schilderijen": [
+                    {
+                        "id": 26,
+                        "naam": "Dennenappels",
+                        "gesigneerd": "ja",
+                        "jaar": "1975",
+                        "materiaal": "Aquarel",
+                        "afmeting": [
+                            25,
+                            34
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    300,
+                                    500
                                 ]
                             }
                         ]
