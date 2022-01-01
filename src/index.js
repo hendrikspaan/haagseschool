@@ -28,7 +28,7 @@ function hoofdMenu(parent) {
 
 function epub(parent) {
   
-  const aantal=18;
+  const aantal=6;
   const section = parent.appendChild(document.createElement('section'));
   section.classList.add("carousel")
   //section.attr("aria-label","Gallery")
@@ -45,12 +45,14 @@ function epub(parent) {
     if (number<10 && number>-1)
        number="0"+i
  
+    carouselSlide.innerText="aaa"+number
+      const img = carouselSlide.appendChild(document.createElement('img'));
+     img.classList.add("carousel-image")
+     img.src = "./data/bionda/"+number+".png";
 
-    const carouselSnapper = carouselSlide.appendChild(document.createElement('img'));
+    const carouselSnapper = carouselSlide.appendChild(document.createElement('div'));
     carouselSnapper.classList.add("carousel__snapper")
-    const img = carouselSlide.appendChild(document.createElement('img'));
-    img.classList.add("carousel-image")
-    img.src = "./data/bionda/"+number+".png";
+   
 
     if (i > 0) {
       const prev = carouselSlide.appendChild(document.createElement('a'));      
