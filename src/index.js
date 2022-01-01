@@ -31,7 +31,7 @@ function epub(parent) {
   const aantal=18;
   const section = parent.appendChild(document.createElement('section'));
   section.classList.add("carousel")
-  section.attr("aria-label","Gallery")
+  //section.attr("aria-label","Gallery")
 
   const carouselViewport = section.appendChild(document.createElement('ol'));
   carouselViewport.classList.add("carousel__viewport");
