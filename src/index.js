@@ -44,14 +44,14 @@ function epub(parent) {
     let number=i;
     if (number<10 && number>-1)
        number="0"+i
+ 
 
-    carouselSlide.innerText = "slide" + number;
-    const img = carouselSlide.appendChild(document.createElement('img'));
-   img.classList.add("carousel-image")
-   img.src = "./data/bionda/"+number+".png";
-
-    const carouselSnapper = carouselSlide.appendChild(document.createElement('div'));
+    const carouselSnapper = carouselSlide.appendChild(document.createElement('img'));
     carouselSnapper.classList.add("carousel__snapper")
+    const img = carouselSlide.appendChild(document.createElement('img'));
+    img.classList.add("carousel-image")
+    img.src = "./data/bionda/"+number+".png";
+
     if (i > 0) {
       const prev = carouselSlide.appendChild(document.createElement('a'));      
       prev.classList.add("carousel__prev")
