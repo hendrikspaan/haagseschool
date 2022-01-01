@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import './style.css';
+import './index.css';
 import json from './data/paintings.json';
 
 
@@ -26,6 +26,70 @@ function hoofdMenu(parent) {
   }
 }
 
+function epub(parent) {
+  
+  const aantal=18;
+  const section = parent.appendChild(document.createElement('section'));
+  section.classList.add("carousel")
+  //carousel.aria-label="Gallery"
+
+  const carouselViewport = section.appendChild(document.createElement('ol'));
+  carouselViewport.classList.add("carousel__viewport");
+
+  for (let i = 1; i < aantal; i++) {
+    const carouselSlide = carouselViewport.appendChild(document.createElement('li'));
+    carouselSlide.classList.add("carousel__slide")
+    carouselSlide.id = "carousel__slide" + i
+    carouselSlide.tabindex="0"
+    let number=i;
+    if (number<10 && number>-1)
+       number="0"+i
+
+    carouselSlide.innerText = "slide" + number;
+    const img = carouselSlide.appendChild(document.createElement('img'));
+   img.classList.add("carousel-image")
+   img.src = "./data/bionda/"+number+".png";
+
+    const carouselSnapper = carouselSlide.appendChild(document.createElement('div'));
+    carouselSnapper.classList.add("carousel__snapper")
+    if (i > 0) {
+      const prev = carouselSlide.appendChild(document.createElement('a'));      
+      prev.classList.add("carousel__prev")
+      prev.innerText = "prev"
+      prev.href = "#carousel__slide" + (i - 1);
+    }
+    if (i < aantal) {
+      const next = carouselSlide.appendChild(document.createElement('a'));
+      next.innerText = "next"
+      next.classList.add("carousel__next")
+      next.href = "#carousel__slide" + (i + 1);
+    }
+  }
+
+  const aside = section.appendChild(document.createElement('aside'));  
+  aside.classList.add("carousel__navigation");
+  const carouselNavigationList = aside.appendChild(document.createElement('ol'));
+  carouselNavigationList.classList.add("carousel__navigation-list");
+
+  for (let i = 1; i < aantal; i++) {
+    const navigationItem = carouselNavigationList.appendChild(document.createElement('li'));
+    navigationItem.classList.add("carousel__navigation-item")
+
+      const item = navigationItem.appendChild(document.createElement('a'));
+      item.innerText = "goto"+(i)
+      item.href = "#carousel__slide" + (i);
+      item.classList.add("carousel__navigation-button")   
+  }
+}
+
+function epub2(parent) {
+  const div = parent.appendChild(document.createElement('div'));
+  div.classList.add("image-div")
+  const img = div.appendChild(document.createElement('img'));
+  img.classList.add("image")
+  img.src = "./data/bionda/01.png";
+}
+
 
 function schildersMenu3(parent) {
 
@@ -39,13 +103,13 @@ function schildersMenu3(parent) {
     const schilder = json.schilders[i].schilder;
     const schildersItem = schildersContainer.appendChild(document.createElement('div'))
     schildersItem.classList.add("schilders-item")
-/*
-    const figure = schildersItem.appendChild(document.createElement('figure'));
-    //  figure.style = "width:150px";
-    const img = figure.appendChild(document.createElement('img'));
-    img.src =  "./images/" + schilder.id + ".jpg";
-    const capt = figure.appendChild(document.createElement('figcaption'));
-    */
+    /*
+        const figure = schildersItem.appendChild(document.createElement('figure'));
+        //  figure.style = "width:150px";
+        const img = figure.appendChild(document.createElement('img'));
+        img.src =  "./images/" + schilder.id + ".jpg";
+        const capt = figure.appendChild(document.createElement('figcaption'));
+        */
     schildersItem.innerHTML = schilder.naam + "<br> (" + schilder.tijd + ")"
   }
 }
@@ -163,10 +227,11 @@ function schildersMenu(div) {
 }
 
 function site(div) {
-  mainTitle(div)
-  hoofdMenu(div)
-  schildersMenu3(div)
-  schildersMenu(div)
+  // mainTitle(div)
+  // hoofdMenu(div)
+  //  schildersMenu3(div)
+  //  schildersMenu(div)
+  epub(div)
 }
 
 const div = document.body.appendChild(document.createElement('div'));
