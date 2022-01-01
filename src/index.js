@@ -31,7 +31,7 @@ function epub(parent) {
   const aantal=18;
   const section = parent.appendChild(document.createElement('section'));
   section.classList.add("carousel")
-  //carousel.aria-label="Gallery"
+  section.attr("aria-label","Gallery")
 
   const carouselViewport = section.appendChild(document.createElement('ol'));
   carouselViewport.classList.add("carousel__viewport");
@@ -220,8 +220,8 @@ function schildersMenu(div) {
       td = tr.appendChild(document.createElement("td"))
       let img = td.appendChild(document.createElement("img"))
       img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))
-      img.width = 200;
-      img.height = 200;
+     // img.width = 200;
+     // img.height = 200;
     }
   }
 }
