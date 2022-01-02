@@ -40,36 +40,29 @@ function epub(parent) {
   const carouselNavigationList = aside.appendChild(document.createElement('ol'));
   carouselNavigationList.classList.add("carousel__navigation-list");
 
-  for (let i = 1; i < aantal; i++) {
+  for (let i = 0; i < (aantal-1); i++) {
     const carouselSlide = carouselViewport.appendChild(document.createElement('li'));
     carouselSlide.classList.add("carousel__slide")
     carouselSlide.id = "carousel__slide" + i
     carouselSlide.tabindex = "0"
-    let number = i;
-    if (number < 10 && number > -1)
-      number = "0" + i
-
-    carouselSlide.innerText = "aaa" + number
     const img = carouselSlide.appendChild(document.createElement('img'));
     img.classList.add("carousel-image")
-    img.src = "./data/bionda/" + number + ".png";
+    img.src = "./data/bionda/" + getImageId(i) + ".png";
 
     const carouselSnapper = carouselSlide.appendChild(document.createElement('div'));
     carouselSnapper.classList.add("carousel__snapper")
 
 
-    if (i > 0) {
       const prev = carouselSlide.appendChild(document.createElement('a'));
       prev.classList.add("carousel__prev")
       prev.innerText = "prev"
       prev.href = "#carousel__slide" + (i - 1);
-    }
-    if (i < aantal) {
+    
       const next = carouselSlide.appendChild(document.createElement('a'));
       next.innerText = "next"
       next.classList.add("carousel__next")
       next.href = "#carousel__slide" + (i + 1);
-    }
+    
 
     const navigationItem = carouselNavigationList.appendChild(document.createElement('li'));
     navigationItem.classList.add("carousel__navigation-item")
@@ -78,6 +71,17 @@ function epub(parent) {
     item.innerText = "goto" + (i)
     item.href = "#carousel__slide" + (i);
     item.classList.add("carousel__navigation-button")
+  }
+
+  
+
+  function getImageId(i){
+    let number = i+1;
+    if (number < 10 && number > -1)
+      number = "0" + number
+    console.log(number)
+    return ""+number;
+
   }
 }
 
