@@ -27,15 +27,15 @@ function hoofdMenu(parent) {
 }
 
 function epub(parent) {
-  
-  const aantal=6;
+
+  const aantal = 6;
   const section = parent.appendChild(document.createElement('section'));
   section.classList.add("carousel")
   //section.attr("aria-label","Gallery")
 
   const carouselViewport = section.appendChild(document.createElement('ol'));
   carouselViewport.classList.add("carousel__viewport");
-  const aside = section.appendChild(document.createElement('aside'));  
+  const aside = section.appendChild(document.createElement('aside'));
   aside.classList.add("carousel__navigation");
   const carouselNavigationList = aside.appendChild(document.createElement('ol'));
   carouselNavigationList.classList.add("carousel__navigation-list");
@@ -44,22 +44,22 @@ function epub(parent) {
     const carouselSlide = carouselViewport.appendChild(document.createElement('li'));
     carouselSlide.classList.add("carousel__slide")
     carouselSlide.id = "carousel__slide" + i
-    carouselSlide.tabindex="0"
-    let number=i;
-    if (number<10 && number>-1)
-       number="0"+i
- 
-    carouselSlide.innerText="aaa"+number
-      const img = carouselSlide.appendChild(document.createElement('img'));
-     img.classList.add("carousel-image")
-     img.src = "./data/bionda/"+number+".png";
+    carouselSlide.tabindex = "0"
+    let number = i;
+    if (number < 10 && number > -1)
+      number = "0" + i
+
+    carouselSlide.innerText = "aaa" + number
+    const img = carouselSlide.appendChild(document.createElement('img'));
+    img.classList.add("carousel-image")
+    img.src = "./data/bionda/" + number + ".png";
 
     const carouselSnapper = carouselSlide.appendChild(document.createElement('div'));
     carouselSnapper.classList.add("carousel__snapper")
-   
+
 
     if (i > 0) {
-      const prev = carouselSlide.appendChild(document.createElement('a'));      
+      const prev = carouselSlide.appendChild(document.createElement('a'));
       prev.classList.add("carousel__prev")
       prev.innerText = "prev"
       prev.href = "#carousel__slide" + (i - 1);
@@ -70,17 +70,14 @@ function epub(parent) {
       next.classList.add("carousel__next")
       next.href = "#carousel__slide" + (i + 1);
     }
-  }
 
-
-  for (let i = 1; i < aantal; i++) {
     const navigationItem = carouselNavigationList.appendChild(document.createElement('li'));
     navigationItem.classList.add("carousel__navigation-item")
 
-      const item = navigationItem.appendChild(document.createElement('a'));
-      item.innerText = "goto"+(i)
-      item.href = "#carousel__slide" + (i);
-      item.classList.add("carousel__navigation-button")   
+    const item = navigationItem.appendChild(document.createElement('a'));
+    item.innerText = "goto" + (i)
+    item.href = "#carousel__slide" + (i);
+    item.classList.add("carousel__navigation-button")
   }
 }
 
@@ -222,8 +219,8 @@ function schildersMenu(div) {
       td = tr.appendChild(document.createElement("td"))
       let img = td.appendChild(document.createElement("img"))
       img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))
-     // img.width = 200;
-     // img.height = 200;
+      // img.width = 200;
+      // img.height = 200;
     }
   }
 }
