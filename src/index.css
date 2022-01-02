@@ -129,7 +129,7 @@ ol, li {
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
-    animation-duration: 8s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
   }
 

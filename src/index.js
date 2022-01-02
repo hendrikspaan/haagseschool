@@ -35,6 +35,10 @@ function epub(parent) {
 
   const carouselViewport = section.appendChild(document.createElement('ol'));
   carouselViewport.classList.add("carousel__viewport");
+  const aside = section.appendChild(document.createElement('aside'));  
+  aside.classList.add("carousel__navigation");
+  const carouselNavigationList = aside.appendChild(document.createElement('ol'));
+  carouselNavigationList.classList.add("carousel__navigation-list");
 
   for (let i = 1; i < aantal; i++) {
     const carouselSlide = carouselViewport.appendChild(document.createElement('li'));
@@ -68,10 +72,6 @@ function epub(parent) {
     }
   }
 
-  const aside = section.appendChild(document.createElement('aside'));  
-  aside.classList.add("carousel__navigation");
-  const carouselNavigationList = aside.appendChild(document.createElement('ol'));
-  carouselNavigationList.classList.add("carousel__navigation-list");
 
   for (let i = 1; i < aantal; i++) {
     const navigationItem = carouselNavigationList.appendChild(document.createElement('li'));
