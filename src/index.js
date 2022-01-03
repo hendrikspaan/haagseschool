@@ -28,52 +28,46 @@ function hoofdMenu(parent) {
   }
 }
 
-function tabMenu(parent) {  
-  const tabmenuContainer = parent.appendChild(document.createElement('div'));
-  tabmenuContainer.classList.add("tabmenu-container")
-  const tabpageContainer = parent.appendChild(document.createElement('div'));
-  tabpageContainer.classList.add("tabpage-container")
- 
-  const btn1 = tabmenuContainer.appendChild(document.createElement('button'));  
-  btn1.classList.add("tablink")
-  btn1.innerText = "Geschiedenis van Hendik Spaan als kunstverzamelaar"
-  btn1.addEventListener("click", () => openPage("geschiedenis", btn1))
+function tabMenu(parent) {
+  const menuContainer = parent.appendChild(document.createElement('div'));
+  menuContainer.classList.add("tabmenu-container")
+  const pageContainer = parent.appendChild(document.createElement('div'));
+  pageContainer.classList.add("tabpage-container")
 
+  function createMenuItem(tabmenuContainer, tabpageContainer, id, title) {
+    const btn = tabmenuContainer.appendChild(document.createElement('button'));
+    btn.classList.add("tablink")
+    btn.innerText = title;
+    btn.addEventListener("click", () => openPage(id, btn))
 
-  const tabContent1 = tabpageContainer.appendChild(document.createElement('div'));
-  tabContent1.id = "geschiedenis"
-  tabContent1.classList.add("tabcontent")  
-  tabContent1.style="display:none"
-  epub(tabContent1,'bionda',18)
+    const content = tabpageContainer.appendChild(document.createElement('div'));
+    content.id = id
+    content.classList.add("tabcontent")
+    content.style = "display:none"
+    return content;
 
-  const btn2 = tabmenuContainer.appendChild(document.createElement('button'));
-  btn2.classList.add("tablink")
-  btn2.innerText = "Schilders van de Haagse School"
-  btn2.addEventListener("click", () => openPage("schilders", btn2))
-   
-  const tabContent2 = tabpageContainer.appendChild(document.createElement('div'));
-  tabContent2.id = "schilders"
-  tabContent2.classList.add("tabcontent")  
-  
-  tabContent2.style="display:none"
-  schildersMenu(tabContent2)
+    function openPage(pageName, elmnt) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
 
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
 
-  function openPage(pageName, elmnt) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = "blue";
     }
-
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = "blue";
   }
+
+  let content = createMenuItem(menuContainer, pageContainer, "geschiedenis", "Geschiedenis van Hendik Spaan als kunstverzamelaar")
+  epub(content, 'bionda', 18)
+
+  content = createMenuItem(menuContainer, pageContainer, "schilders", "Schilders van de Haagse School")
+  schildersMenu(content)
 }
 
 function schildersMenu(parent) {
