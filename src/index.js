@@ -242,7 +242,7 @@ function schildersMenu(div) {
 function site(div) {
    mainTitle(div)
    hoofdMenu(div)
-  //  schildersMenu3(div)
+    schildersMenu3(div)
   //  schildersMenu(div)
   epub(div)
 }
