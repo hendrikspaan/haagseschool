@@ -1,0 +1,33 @@
+.tabmenu-container{
+  background-color: var(--main-bg-color);
+  display: flex;
+  margin: 10px;
+}
+
+
+.tabmenu-container .tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;  
+  margin: 10px;
+  flex-grow : 1;
+}
+
+.tabmenu-container .tablink:hover {
+  background-color: #777;
+}
+
+.tabpage-container{
+  background-color: var(--main-bg-color);
+  display: flex;
+  margin: 10px;
+}
+
+.tabpage-container .tabcontent {  
+  margin: auto;
+  margin-top: 15px;
+}

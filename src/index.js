@@ -1,5 +1,6 @@
 //import _, { divide } from 'lodash';
 import './index.css';
+import './tabmenu.css';
 import json from './data/paintings.json';
 import epub from './epub.js'
 
@@ -27,30 +28,39 @@ function hoofdMenu(parent) {
   }
 }
 
-
-function tabMenu(parent) {
-
-  const btn1 = parent.appendChild(document.createElement('button'));  
+function tabMenu(parent) {  
+  const tabmenuContainer = parent.appendChild(document.createElement('div'));
+  tabmenuContainer.classList.add("tabmenu-container")
+  
+  const btn1 = tabmenuContainer.appendChild(document.createElement('button'));  
   btn1.classList.add("tablink")
   btn1.innerText = "Geschiedenis van Hendik Spaan als kunstverzamelaar"
-  btn1.addEventListener("click", () => openPage("geschiedenis", btn1, "red"))
+  btn1.addEventListener("click", () => openPage("geschiedenis", btn1))
 
-  const btn2 = parent.appendChild(document.createElement('button'));
+  const btn2 = tabmenuContainer.appendChild(document.createElement('button'));
   btn2.classList.add("tablink")
   btn2.innerText = "Schilders van de Haagse School"
-  btn2.addEventListener("click", () => openPage("schilders", btn2, "green"))
+  btn2.addEventListener("click", () => openPage("schilders", btn2))
 
-  const tabContent1 = parent.appendChild(document.createElement('div'));
+  const tabpageContainer = parent.appendChild(document.createElement('div'));
+  tabpageContainer.classList.add("tabpage-container")
+  
+  const tabContent1 = tabpageContainer.appendChild(document.createElement('div'));
   tabContent1.id = "geschiedenis"
   tabContent1.classList.add("tabcontent")  
+  tabContent1.style="display:none"
+
   epub(tabContent1,'bionda',18)
-  const tabContent2 = parent.appendChild(document.createElement('div'));
+  const tabContent2 = tabpageContainer.appendChild(document.createElement('div'));
   tabContent2.id = "schilders"
   tabContent2.classList.add("tabcontent")  
+  
+  tabContent2.style="display:none"
   schildersMenu(tabContent2)
   //document.getElementById("geschiedenis").click();
 
-  function openPage(pageName, elmnt, color) {
+
+  function openPage(pageName, elmnt) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -68,7 +78,7 @@ function tabMenu(parent) {
     document.getElementById(pageName).style.display = "block";
 
     // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
+    elmnt.style.backgroundColor = "blue";
   }
 }
 
