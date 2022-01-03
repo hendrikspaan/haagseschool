@@ -19,8 +19,6 @@
   text-align: center;
 }
 
-
-
 .header {
   background-color: var(--main-bg-color);
   display: flex;
@@ -65,18 +63,24 @@
   margin: 10px;
 }
 
-.schilders-container .schilders-item {
+.schilders-container .schilders-button{
   background-color: var(--bg-color);
   width: 180px;
-  height: 100px;
-  margin: 10px;
-  padding-top: 10px;
+  height: 8em;
+  margin: 1em;
+  padding-top: 5px;
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 600;
   line-height: 2.5em;
   text-align: center;
 }
+
+.schilders-container .schilders-button:hover{
+  background-color: var(--contrast-bg-color);
+  color: white;
+}
+
 
 .schilder .title {
   font-weight: bold;

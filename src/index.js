@@ -69,7 +69,7 @@ function tabMenu(parent) {
       }
 
       document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundColor = "blue";
+      elmnt.style.backgroundColor = "green";
     }
   }
 
@@ -88,7 +88,7 @@ function schildersMenu(parent) {
   for (var i = 0; i < json.schilders.length; i++) {
     const schilder = json.schilders[i].schilder;
     const btn = menuContainer.appendChild(document.createElement('button'))
-    btn.classList.add("schilders-item")
+    btn.classList.add("schilders-button")
     btn.addEventListener("click", () => openPage(schilder))
     btn.innerHTML = schilder.naam + "<br> (" + schilder.tijd + ")"
   }
@@ -152,13 +152,12 @@ function schildersMenu(parent) {
 }
 
 
+const div = document.body.appendChild(document.createElement('div'));
+site(div);
+
 
 function site(div) {
   mainTitle(div)
   hoofdMenu(div)
   tabMenu(div)
 }
-
-const div = document.body.appendChild(document.createElement('div'));
-site(div);
-
