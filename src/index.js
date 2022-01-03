@@ -1,4 +1,4 @@
-import _, { divide } from 'lodash';
+//import _, { divide } from 'lodash';
 import './index.css';
 import json from './data/paintings.json';
 import epub from './epub.js'
@@ -17,6 +17,7 @@ function hoofdMenu(parent) {
   const menu = header.appendChild(document.createElement('div'));
   menu.classList.add("menu")
 
+
   for (var i = 0; i < json.urls.length; i++) {
     const a = menu.appendChild(document.createElement('a'));
     a.classList.add("menu-item")
@@ -27,18 +28,59 @@ function hoofdMenu(parent) {
 }
 
 
-function schildersMenu3(parent) {
+function tabMenu(parent) {
 
-  const title = parent.appendChild(document.createElement('h1'));
-  title.innerText = "Schilders van de Haagse School"
-  title.classList.add("title-schilders")
+  const btn1 = parent.appendChild(document.createElement('button'));  
+  btn1.classList.add("tablink")
+  btn1.innerText = "Geschiedenis van Hendik Spaan als kunstverzamelaar"
+  btn1.addEventListener("click", () => openPage("geschiedenis", btn1, "red"))
+
+  const btn2 = parent.appendChild(document.createElement('button'));
+  btn2.classList.add("tablink")
+  btn2.innerText = "Schilders van de Haagse School"
+  btn2.addEventListener("click", () => openPage("schilders", btn2, "green"))
+
+  const tabContent1 = parent.appendChild(document.createElement('div'));
+  tabContent1.id = "geschiedenis"
+  tabContent1.classList.add("tabcontent")  
+  epub(tabContent1,'bionda',18)
+  const tabContent2 = parent.appendChild(document.createElement('div'));
+  tabContent2.id = "schilders"
+  tabContent2.classList.add("tabcontent")  
+  schildersMenu(tabContent2)
+  //document.getElementById("geschiedenis").click();
+
+  function openPage(pageName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+  }
+}
+
+function schildersMenu(parent) {
   const schildersContainer = parent.appendChild(document.createElement('div'));
   schildersContainer.classList.add("schilders-container")
 
   for (var i = 0; i < json.schilders.length; i++) {
     const schilder = json.schilders[i].schilder;
-    const schildersItem = schildersContainer.appendChild(document.createElement('div'))
+    const schildersItem = schildersContainer.appendChild(document.createElement('a'))
     schildersItem.classList.add("schilders-item")
+    schildersItem.href = "http://www.nu.nl"
     /*
         const figure = schildersItem.appendChild(document.createElement('figure'));
         //  figure.style = "width:150px";
@@ -50,7 +92,7 @@ function schildersMenu3(parent) {
   }
 }
 
-function schildersMenu2(div) {
+function schildersMenuxx(div) {
   const ul = div.appendChild(document.createElement('ul'));
   ul.classList.add("menu_schilders")
   for (var i = 0; i < json.schilders.length; i++) {
@@ -73,7 +115,7 @@ function schildersMenu2(div) {
   }
 }
 
-function schildersMenu(div) {
+function schildersMenuyy(div) {
 
   const tbl = div.appendChild(document.createElement('table'));
   tbl.classList.add('schilders')
@@ -163,11 +205,9 @@ function schildersMenu(div) {
 }
 
 function site(div) {
-   mainTitle(div)
-   hoofdMenu(div)
-    schildersMenu3(div)
-  //  schildersMenu(div)
-  epub(div,'bionda',18)
+  mainTitle(div)
+  hoofdMenu(div)
+  tabMenu(div)
 }
 
 const div = document.body.appendChild(document.createElement('div'));
