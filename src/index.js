@@ -18,7 +18,6 @@ function hoofdMenu(parent) {
   const menu = header.appendChild(document.createElement('div'));
   menu.classList.add("menu")
 
-
   for (var i = 0; i < json.urls.length; i++) {
     const a = menu.appendChild(document.createElement('a'));
     a.classList.add("menu-item")
@@ -64,28 +63,66 @@ function tabMenu(parent) {
   }
 
   createMenuItem(menuContainer, pageContainer, "geschiedenis", "Geschiedenis van Hendik Spaan als kunstverzamelaar",
-  (parent)=>epub(parent, 'bionda', 18))
- 
-  createMenuItem(menuContainer, pageContainer, "schilders", "Schilders van de Haagse School",(parent)=> schildersMenu(parent))
+    (parent) => epub(parent, 'bionda', 18))
+
+  createMenuItem(menuContainer, pageContainer, "schilders", "Schilders van de Haagse School", (parent) => schildersMenu(parent))
 }
 
 function schildersMenu(parent) {
-  const schildersContainer = parent.appendChild(document.createElement('div'));
-  schildersContainer.classList.add("schilders-container")
+  const menuContainer = parent.appendChild(document.createElement('div'));
+  menuContainer.classList.add("schilders-container")
+  const schilderDiv = parent.appendChild(document.createElement('div'));
+  schilderDiv.classList.add("schilder")
 
   for (var i = 0; i < json.schilders.length; i++) {
     const schilder = json.schilders[i].schilder;
-    const schildersItem = schildersContainer.appendChild(document.createElement('a'))
-    schildersItem.classList.add("schilders-item")
-    schildersItem.href = "http://www.nu.nl"
-    /*
-        const figure = schildersItem.appendChild(document.createElement('figure'));
-        //  figure.style = "width:150px";
-        const img = figure.appendChild(document.createElement('img'));
-        img.src =  "./images/" + schilder.id + ".jpg";
-        const capt = figure.appendChild(document.createElement('figcaption'));
-        */
-    schildersItem.innerHTML = schilder.naam + "<br> (" + schilder.tijd + ")"
+    const btn = menuContainer.appendChild(document.createElement('button'))
+    btn.classList.add("schilders-item")
+    btn.addEventListener("click", () => openPage(schilder))
+    btn.innerHTML = schilder.naam + "<br> (" + schilder.tijd + ")"
+  }
+
+  function openPage(schilder) {   
+    schilderDiv.innerHTML=null;
+    const title = schilderDiv.appendChild(document.createElement('h1'))
+    title.classList.add("title")
+    title.innerText = schilder.naam;
+    title.innerHTML = schilder.naam + "<br> (" + schilder.tijd + ")"
+ 
+    const tbl = schilderDiv.appendChild(document.createElement('table'))
+    const thead = tbl.appendChild(document.createElement('thead'));
+    const tbody = tbl.appendChild(document.createElement('tbody'));
+
+    //  schilderDiv.innerText+=schilderij.naam;
+
+    const tr = thead.appendChild(document.createElement('tr'));
+    let th = tr.appendChild(document.createElement('th'));
+    th.innerText = "Schilderij";
+    th = tr.appendChild(document.createElement('th'));
+    th.innerText = "Taxatie";
+    th = tr.appendChild(document.createElement('th'));
+    th.innerText = "Taxatie";
+
+    for (var j = 0; j < schilder.schilderijen.length; j++) {
+      const schilderij = schilder.schilderijen[j]
+      let tr = tbody.appendChild(document.createElement("tr"))
+      let td = tr.appendChild(document.createElement("td"))
+      td.innerHTML = schilderij.naam+"<br><br>"+ schilderij.materiaal
+      if (schilderij.afmeting) td.innerHTML += "<br>breedte=" + schilderij.afmeting[0] + "<br>hoogte=" + schilderij.afmeting[1]
+      td.innerHTML += "<br>Gesigneerd: "+schilderij.gesigneerd
+      if (schilderij.jaar) th.innerHTML = "<br>Jaar: "+schilderij.jaar
+      td = tr.appendChild(document.createElement("td"))
+      td.innerText = schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
+      td = tr.appendChild(document.createElement("td"))
+      if (schilderij.taxaties[1]) {
+        td.innerText = schilderij.taxaties[1]["2"]
+      }
+      td = tr.appendChild(document.createElement("td"))
+      let img = td.appendChild(document.createElement("img"))
+      img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))
+       img.width = 200;
+       img.height = 200;
+    }
   }
 }
 
