@@ -1,5 +1,4 @@
 import _, { divide } from 'lodash';
-import './epub.css';
 import './index.css';
 import json from './data/paintings.json';
 import epub from './epub.js'

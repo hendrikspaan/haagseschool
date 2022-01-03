@@ -1,3 +1,5 @@
+
+import './epub.css';
 export default function epub(parent, name,aantal) {
     const container = parent.appendChild(document.createElement('div'));
    container.classList.add("slideshow-container")
