@@ -17,7 +17,6 @@ img {vertical-align: middle;}
   position: absolute;
   top: 1.5%;
   width: auto;
-  padding: 16px;
   margin-top: -22px;
   color: green;
   font-weight: bold;
@@ -25,7 +24,7 @@ img {vertical-align: middle;}
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: darkgray;
+  background-color: transparant;
 }
 
 /* Position the "next button" to the right */
