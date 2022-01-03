@@ -27,9 +27,8 @@ function hoofdMenu(parent) {
   }
 }
 
-function epub(parent) {
-  const aantal = 6;
-  const container = parent.appendChild(document.createElement('div'));
+function epub(parent, name,aantal) {
+   const container = parent.appendChild(document.createElement('div'));
   container.classList.add("slideshow-container")
   const menu = parent.appendChild(document.createElement('div'));
   menu.style = "text-align:center";
@@ -43,7 +42,7 @@ function epub(parent) {
   //  numberText.classList.add("numbertext")
     const img = slides.appendChild(document.createElement('img'));
     img.classList.add("carousel-image")
-    const src = "./data/bionda/" + getImageId(i) + ".png";
+    const src = "./data/"+name+"/" + getImageId(i) + ".png";
     img.src = src;
     img.style = "width:100%"
   //  const captionText = slides.appendChild(document.createElement('div'));
@@ -64,7 +63,6 @@ function epub(parent) {
   next.classList.add("next")
   next.innerHTML = "&#10095;"
   next.addEventListener("click", () => plusSlides(+1))
-
 
   var slideIndex = 1;
   showSlides(slideIndex);
@@ -244,7 +242,7 @@ function site(div) {
    hoofdMenu(div)
     schildersMenu3(div)
   //  schildersMenu(div)
-  epub(div)
+  epub(div,'bionda',18)
 }
 
 const div = document.body.appendChild(document.createElement('div'));
