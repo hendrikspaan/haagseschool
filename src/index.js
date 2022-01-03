@@ -99,6 +99,8 @@ function schildersMenu(parent) {
     let th = tr.appendChild(document.createElement('th'));
     th.innerText = "Schilderij";
     th = tr.appendChild(document.createElement('th'));
+    th.innerText = "Foto";
+    th = tr.appendChild(document.createElement('th'));
     th.innerText = "Taxatie";
     th = tr.appendChild(document.createElement('th'));
     th.innerText = "Taxatie";
@@ -123,16 +125,17 @@ function schildersMenu(parent) {
         li.innerText += "Jaar: " + schilderij.jaar
       }
       td = tr.appendChild(document.createElement("td"))
+      let img = td.appendChild(document.createElement("img"))
+      img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))
+      img.width = 200;
+      img.height = 200;
+      td = tr.appendChild(document.createElement("td"))
       td.innerText = schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
       td = tr.appendChild(document.createElement("td"))
       if (schilderij.taxaties[1]) {
         td.innerText = schilderij.taxaties[1]["2"]
       }
-      td = tr.appendChild(document.createElement("td"))
-      let img = td.appendChild(document.createElement("img"))
-      img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))
-      img.width = 200;
-      img.height = 200;
+     
     }
   }
 }
