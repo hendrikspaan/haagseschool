@@ -82,13 +82,13 @@ function schildersMenu(parent) {
     btn.innerHTML = schilder.naam + "<br> (" + schilder.tijd + ")"
   }
 
-  function openPage(schilder) {   
-    schilderDiv.innerHTML=null;
+  function openPage(schilder) {
+    schilderDiv.innerHTML = null;
     const title = schilderDiv.appendChild(document.createElement('h1'))
     title.classList.add("title")
     title.innerText = schilder.naam;
     title.innerHTML = schilder.naam + "<br> (" + schilder.tijd + ")"
- 
+
     const tbl = schilderDiv.appendChild(document.createElement('table'))
     const thead = tbl.appendChild(document.createElement('thead'));
     const tbody = tbl.appendChild(document.createElement('tbody'));
@@ -107,10 +107,21 @@ function schildersMenu(parent) {
       const schilderij = schilder.schilderijen[j]
       let tr = tbody.appendChild(document.createElement("tr"))
       let td = tr.appendChild(document.createElement("td"))
-      td.innerHTML = schilderij.naam+"<br><br>"+ schilderij.materiaal
-      if (schilderij.afmeting) td.innerHTML += "<br>breedte=" + schilderij.afmeting[0] + "<br>hoogte=" + schilderij.afmeting[1]
-      td.innerHTML += "<br>Gesigneerd: "+schilderij.gesigneerd
-      if (schilderij.jaar) th.innerHTML = "<br>Jaar: "+schilderij.jaar
+      let ul = td.appendChild(document.createElement("ul"))
+      let h3 = ul.appendChild(document.createElement("h3"))
+      h3.innerText = schilderij.naam;
+      let li = ul.appendChild(document.createElement("li"))
+      li.innerHTML = "<b>Materiaal :</b> "+schilderij.materiaal
+      if (schilderij.afmeting) {
+        let li = ul.appendChild(document.createElement("li"))
+        li.innerHTML += "<b>Afmetingen: </b><br>&nbsp;&nbsp;hoogte=" + schilderij.afmeting[1] + "<br>&nbsp;&nbsp;breedte=" + schilderij.afmeting[0]
+      }
+      li = ul.appendChild(document.createElement("li"))
+      li.innerHTML += "<b>Gesigneerd:</b> " + schilderij.gesigneerd
+      if (schilderij.jaar) {
+        let li = ul.appendChild(document.createElement("li"))
+        li.innerText += "Jaar: " + schilderij.jaar
+      }
       td = tr.appendChild(document.createElement("td"))
       td.innerText = schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
       td = tr.appendChild(document.createElement("td"))
@@ -120,8 +131,8 @@ function schildersMenu(parent) {
       td = tr.appendChild(document.createElement("td"))
       let img = td.appendChild(document.createElement("img"))
       img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))
-       img.width = 200;
-       img.height = 200;
+      img.width = 200;
+      img.height = 200;
     }
   }
 }
