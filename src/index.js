@@ -34,7 +34,7 @@ function tabMenu(parent) {
   const pageContainer = parent.appendChild(document.createElement('div'));
   pageContainer.classList.add("tabpage-container")
 
-  function createMenuItem(tabmenuContainer, tabpageContainer, id, title) {
+  function createMenuItem(tabmenuContainer, tabpageContainer, id, title, addContent) {
     const btn = tabmenuContainer.appendChild(document.createElement('button'));
     btn.classList.add("tablink")
     btn.innerText = title;
@@ -44,7 +44,7 @@ function tabMenu(parent) {
     content.id = id
     content.classList.add("tabcontent")
     content.style = "display:none"
-    return content;
+    addContent(content)
 
     function openPage(pageName, elmnt) {
       var i, tabcontent, tablinks;
@@ -63,11 +63,10 @@ function tabMenu(parent) {
     }
   }
 
-  let content = createMenuItem(menuContainer, pageContainer, "geschiedenis", "Geschiedenis van Hendik Spaan als kunstverzamelaar")
-  epub(content, 'bionda', 18)
-
-  content = createMenuItem(menuContainer, pageContainer, "schilders", "Schilders van de Haagse School")
-  schildersMenu(content)
+  createMenuItem(menuContainer, pageContainer, "geschiedenis", "Geschiedenis van Hendik Spaan als kunstverzamelaar",
+  (parent)=>epub(parent, 'bionda', 18))
+ 
+  createMenuItem(menuContainer, pageContainer, "schilders", "Schilders van de Haagse School",(parent)=> schildersMenu(parent))
 }
 
 function schildersMenu(parent) {
