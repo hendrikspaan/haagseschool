@@ -28,7 +28,7 @@ function hoofdMenu(parent) {
 
   function figure(parent) {
     const div = parent.appendChild(document.createElement('div'));
-  
+
     const figure = div.appendChild(document.createElement('figure'));
     figure.style = "width:100px";
     const img = figure.appendChild(document.createElement('img'));
@@ -111,20 +111,16 @@ function schildersMenu(parent) {
     th.innerText = "Schilderij";
     th = tr.appendChild(document.createElement('th'));
     th.innerText = "Foto";
-    th = tr.appendChild(document.createElement('th'));
-    th.innerText = "Taxatie";
-    th = tr.appendChild(document.createElement('th'));
-    th.innerText = "Taxatie";
 
     for (var j = 0; j < schilder.schilderijen.length; j++) {
       const schilderij = schilder.schilderijen[j]
       let tr = tbody.appendChild(document.createElement("tr"))
       let td = tr.appendChild(document.createElement("td"))
       let h3 = td.appendChild(document.createElement("h3"))
-       h3.innerText = schilderij.naam;
-       let ul = td.appendChild(document.createElement("ul"))
-       let li = ul.appendChild(document.createElement("li"))
-      li.innerHTML = "<b>Materiaal:</b> "+schilderij.materiaal
+      h3.innerText = schilderij.naam;
+      let ul = td.appendChild(document.createElement("ul"))
+      let li = ul.appendChild(document.createElement("li"))
+      li.innerHTML = "<b>Materiaal:</b> " + schilderij.materiaal
       if (schilderij.afmeting) {
         let li = ul.appendChild(document.createElement("li"))
         li.innerHTML += "<b>Afmetingen:</b><br>&nbsp;&nbsp;hoogte=" + schilderij.afmeting[1] + "<br>&nbsp;&nbsp;breedte=" + schilderij.afmeting[0]
@@ -135,18 +131,24 @@ function schildersMenu(parent) {
         let li = ul.appendChild(document.createElement("li"))
         li.innerHTML += "<b>Jaar:</b> " + schilderij.jaar
       }
+      li = ul.appendChild(document.createElement("li"))
+
+      li.innerHTML = "<b>taxatie 1978:</b>" + schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
+      if (schilderij.taxaties[1]) {
+        li = ul.appendChild(document.createElement("li"))
+        li.innerHTML = "<b>taxatie 2004:</b>" + schilderij.taxaties[1]["2"]
+      }
       td = tr.appendChild(document.createElement("td"))
       let img = td.appendChild(document.createElement("img"))
       img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))
-      img.width = 200;
-      img.height = 200;
-      td = tr.appendChild(document.createElement("td"))
-      td.innerText = schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
-      td = tr.appendChild(document.createElement("td"))
-      if (schilderij.taxaties[1]) {
-        td.innerText = schilderij.taxaties[1]["2"]
+      img.width=200;
+      img.height=200;
+      if (schilderij.afmeting) {
+        img.height = schilderij.afmeting[0] * 30;
+        img.width = schilderij.afmeting[1] * 30;
       }
-     
+
+
     }
   }
 }
