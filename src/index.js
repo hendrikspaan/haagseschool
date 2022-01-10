@@ -133,10 +133,10 @@ function schildersMenu(parent) {
       }
       li = ul.appendChild(document.createElement("li"))
 
-      li.innerHTML = "<b>taxatie 1978:</b>" + schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
+      li.innerHTML = "<b>taxatie 2004:</b>" + schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
       if (schilderij.taxaties[1]) {
         li = ul.appendChild(document.createElement("li"))
-        li.innerHTML = "<b>taxatie 2004:</b>" + schilderij.taxaties[1]["2"]
+        li.innerHTML = "<b>taxatie 1978:</b>" + schilderij.taxaties[1]["2"]
       }
       td = tr.appendChild(document.createElement("td"))
       let img = td.appendChild(document.createElement("img"))
