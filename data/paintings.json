@@ -14,414 +14,6 @@
     "schilders": [
         {
             "schilder": {
-                "id": "akkeringa",
-                "naam": "Johannes Evert Akkeringa",
-                "url": "https://nl.wikipedia.org/wiki/Johannes_Evert_Hendrik_Akkeringa",
-                "tijd": "1861-1942",
-                "schilderijen": [
-                    {
-                        "id": 1,
-                        "naam": "Nettenboetsers",
-                        "jaar": null,
-                        "gesigneerd": "ja",
-                        "materiaal": "Zwart krijt op papier",
-                        "afmeting": [
-                            26,
-                            16
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    500,
-                                    700
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "naam": "Moeder en Kind op een bank bij een boerderij",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Zwart krijt op papier",
-                        "afmeting": [
-                            37,
-                            27
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    500,
-                                    700
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 3,
-                        "naam": "Meisjes op het strand",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Zwart krijt op papier",
-                        "afmeting": [
-                            24,
-                            30
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    800,
-                                    1200
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "schilder": {
-                "id": "arntzenius",
-                "naam": "Floris Arntzenius",
-                "url": "https://nl.wikipedia.org/wiki/Floris_Arntzenius",
-                "tijd": "1864-1925",
-                "schilderijen": [
-                    {
-                        "id": 1,
-                        "naam": "Gracht in Den Haag",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Aquarel en gouache op papier",
-                        "afmeting": [
-                            13,
-                            9
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    2500,
-                                    3500
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "naam": "Portret Hendrik Spaan",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Olie op doek",
-                        "afmeting": [
-                            42,
-                            48
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    3000,
-                                    5000
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 3,
-                        "naam": "Plein bij Paleis Noordeinde.",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Aquarel en gouache op papier",
-                        "afmeting": [
-                            13,
-                            10.5
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    4000,
-                                    6000
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 7,
-                        "naam": "Markt in Den Haag",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "aquarel en gouache op papier",
-                        "afmeting": [
-                            13,
-                            9
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    7000,
-                                    9000
-                                ]
-                            },
-                            {
-                                "2": "fl. 7.500"
-                            }
-                        ]
-                    },
-                    {
-                        "id": 8,
-                        "naam": "Figuren in een straat",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "aquarel en gouache op papier",
-                        "afmeting": [
-                            10,
-                            13
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    7000,
-                                    9000
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 9,
-                        "naam": "Strandgezicht",
-                        "gesigneerd": "ja 2x",
-                        "jaar": null,
-                        "materiaal": "aquarel en gouache op papier",
-                        "afmeting": [
-                            25,
-                            18
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    15000,
-                                    20000
-                                ]
-                            },
-                            {
-                                "2": "fl 12.000"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "schilder": {
-                "id": "daalhoff",
-                "naam": "Henri Daalhoff",
-                "url": "https://nl.wikipedia.org/wiki/Henri_Daalhoff",
-                "tijd": "1867-1953",
-                "schilderijen": [
-                    {
-                        "id": 10,
-                        "naam": "Boerderijfacade",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Olie op paneel",
-                        "afmeting": null,
-                        "taxaties": [
-                            {
-                                "1": [
-                                    150,
-                                    200
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 11,
-                        "naam": "Slootje met wilgen",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Olie op paneel",
-                        "afmeting": null,
-                        "taxaties": [
-                            {
-                                "1": [
-                                    200,
-                                    300
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 12,
-                        "naam": "Vrouw bij boerderijdeur",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Olie op paneel",
-                        "afmeting": null,
-                        "taxaties": [
-                            {
-                                "1": [
-                                    300,
-                                    500
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 13,
-                        "naam": "Boerderij bij een pomp.",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Olie op paneel",
-                        "afmeting": null,
-                        "taxaties": [
-                            {
-                                "1": [
-                                    500,
-                                    700
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 14,
-                        "naam": "Boerderij bij een pomp.(2)",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Olie op paneel",
-                        "afmeting": null,
-                        "taxaties": [
-                            {
-                                "1": [
-                                    500,
-                                    700
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 15,
-                        "naam": "Achtertuintje",
-                        "gesigneerd": "met initialen",
-                        "jaar": null,
-                        "materiaal": "Olie op paneel",
-                        "afmeting": [
-                            23,
-                            32
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    2500,
-                                    3500
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "schilder": {
-                "id": "dankmeijer",
-                "naam": "Charles Dankmeijer",
-                "url": "https://nl.wikipedia.org/wiki/Charles_Dankmeijer",
-                "tijd": "1861-1923",
-                "schilderijen": [
-                    {
-                        "id": 16,
-                        "naam": "Boerderij",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "potlood op papier",
-                        "afmeting": null,
-                        "taxaties": [
-                            {
-                                "1": [
-                                    200,
-                                    300
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 17,
-                        "naam": "Boerenerf",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Marouflé",
-                        "afmeting": [
-                            33,
-                            39
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    600,
-                                    800
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 18,
-                        "naam": "Boerderij tussen bomen",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Potlood op papier",
-                        "afmeting": [
-                            43,
-                            34
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    700,
-                                    900
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 19,
-                        "naam": "Dorpskerk met korenakker",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Marouflé",
-                        "afmeting": [
-                            61,
-                            37
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    1000,
-                                    1500
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 20,
-                        "naam": "Boerderij in de zomer",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Marouflé",
-                        "afmeting": [
-                            61,
-                            37
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    1200,
-                                    1600
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "schilder": {
                 "id": "gabriel",
                 "naam": "Paul Joseph Gabriël",
                 "url": "https://nl.wikipedia.org/wiki/Paul_Joseph_Constantin_Gabri%C3%ABl",
@@ -434,8 +26,8 @@
                         "jaar": null,
                         "materiaal": "Olie op doek",
                         "afmeting": [
-                            47,
-                            30
+                            30,
+                            47
                         ],
                         "taxaties": [
                             {
@@ -452,30 +44,32 @@
                 ]
             }
         },
-     
         {
             "schilder": {
-                "id": "israels",
-                "naam": "Isaac Israëls",
-                "url": "https://nl.wikipedia.org/wiki/Isaac_Isra%C3%ABls",
-                "tijd": "1865-1934",
+                "id": "mesdag",
+                "naam": "Hendrik Willem Mesdag",
+                "url": "https://nl.wikipedia.org/wiki/Hendrik_Willem_Mesdag",
+                "tijd": "1831-1915",
                 "schilderijen": [
                     {
-                        "id": 27,
-                        "naam": "Portret Hendrik Spaan",
+                        "id": 31,
+                        "naam": "Bomschuiten op het strand",
                         "gesigneerd": "ja",
                         "jaar": null,
-                        "materiaal": "Zwart krijt op papier",
+                        "materiaal": "Aquarel op papier",
                         "afmeting": [
-                            10,
-                            8
+                            56,
+                            37
                         ],
                         "taxaties": [
                             {
                                 "1": [
-                                    1200,
-                                    1600
+                                    10000,
+                                    15000
                                 ]
+                            },
+                            {
+                                "2": "fl. 20.000"
                             }
                         ]
                     }
@@ -491,13 +85,13 @@
                 "schilderijen": [
                     {
                         "id": 28,
-                        "naam": "Visserspaar 'Vrijage' gedateerd: Pulchri 1859 mmaris",
+                        "naam": "Visserspaar 'Vrijage' gedateerd: Pulchri 1859",
                         "gesigneerd": "ja",
                         "jaar": "1859",
                         "materiaal": "Aquarel op papier",
                         "afmeting": [
-                            20.5,
-                            37
+                            37,
+                            20.5
                         ],
                         "taxaties": [
                             {
@@ -528,8 +122,8 @@
                         "jaar": null,
                         "materiaal": "Olie op doek",
                         "afmeting": [
-                            44,
-                            33
+                            41,
+                            31
                         ],
                         "taxaties": [
                             {
@@ -557,8 +151,8 @@
                         "jaar": null,
                         "materiaal": "Aquarel op papier",
                         "afmeting": [
-                            39,
-                            27
+                            27,
+                            39
                         ],
                         "taxaties": [
                             {
@@ -577,30 +171,603 @@
         },
         {
             "schilder": {
-                "id": "mesdag",
-                "naam": "Hendrik Willem Mesdag",
-                "url": "https://nl.wikipedia.org/wiki/Hendrik_Willem_Mesdag",
-                "tijd": "1831-1915",
+                "id": "weissenbruch",
+                "naam": "Hendrik Johannes Weissenbruch",
+                "url": "https://nl.wikipedia.org/wiki/Jan_Hendrik_Weissenbruch",
+                "tijd": "1824-1903",
                 "schilderijen": [
                     {
-                        "id": 31,
-                        "naam": "Bomschuiten op het strand",
+                        "id": 34,
+                        "naam": "Een plas in de polder bij grijs weer",
                         "gesigneerd": "ja",
-                        "jaar": null,
+                        "jaar": "1894",
                         "materiaal": "Aquarel op papier",
                         "afmeting": [
+                            52,
+                            71
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    4000,
+                                    6000
+                                ]
+                            },
+                            {
+                                "2": "fl.20.000"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "morel",
+                "naam": "Willem Vaarzon Morel",
+                "url": "https://nl.wikipedia.org/wiki/Willem_Vaarzon_Morel",
+                "tijd": "1868-1955",
+                "schilderijen": [
+                    {
+                        "id": 33,
+                        "naam": "Wieringerwal",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Marouflé",
+                        "afmeting": [
+                            42,
+                            52
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    800,
+                                    1200
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "arntzenius",
+                "naam": "Floris Arntzenius",
+                "url": "https://nl.wikipedia.org/wiki/Floris_Arntzenius",
+                "tijd": "1864-1925",
+                "schilderijen": [
+                    {
+                        "id": 9,
+                        "naam": "Strandgezicht",
+                        "gesigneerd": "ja 2x",
+                        "jaar": null,
+                        "materiaal": "aquarel en gouache op papier",
+                        "afmeting": [
+                            18,
+                            25
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    15000,
+                                    20000
+                                ]
+                            },
+                            {
+                                "2": "fl 12.000"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "naam": "Figuren in een straat (Spuistraat Den Haag)",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "aquarel en gouache op papier",
+                        "afmeting": [
+                            13,
+                            10
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    7000,
+                                    9000
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "naam": "Haagse bloemenmarkt",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "aquarel en gouache op papier",
+                        "afmeting": [
+                            9,
+                            13
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    7000,
+                                    9000
+                                ]
+                            },
+                            {
+                                "2": "fl. 7.500"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "naam": "Gracht in Den Haag",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Aquarel en gouache op papier",
+                        "afmeting": [
+                            9,
+                            13
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    2500,
+                                    3500
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "naam": "Portret Hendrik Spaan",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Olie op doek",
+                        "afmeting": [
+                            48,
+                            42
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    3000,
+                                    5000
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "naam": "Plein bij Paleis Noordeinde.",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Aquarel en gouache op papier",
+                        "afmeting": [
+                            10.5,
+                            13
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    4000,
+                                    6000
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "dankmeijer",
+                "naam": "Charles Dankmeijer",
+                "url": "https://nl.wikipedia.org/wiki/Charles_Dankmeijer",
+                "tijd": "1861-1923",
+                "schilderijen": [
+                    {
+                        "id": 1,
+                        "naam": "Dorpskerk met korenakker",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Marouflé",
+                        "afmeting": [
                             37,
+                            61
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    1000,
+                                    1500
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "naam": "Boerenerf",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Marouflé",
+                        "afmeting": [
+                            33,
+                            39
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    600,
+                                    800
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 20,
+                        "naam": "Boerderij in de zomer",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Marouflé",
+                        "afmeting": [
+                            38.5,
+                            59
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "naam": "Boerderij",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "potlood op papier",
+                        "afmeting": [
+                            25,
+                            34
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    200,
+                                    300
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "naam": "Boerderij tussen bomen",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Potlood op papier",
+                        "afmeting": [
+                            36,
+                            43
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    700,
+                                    900
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "israelsi",
+                "naam": "Isaac Israëls",
+                "url": "https://nl.wikipedia.org/wiki/Isaac_Isra%C3%ABls",
+                "tijd": "1865-1934",
+                "schilderijen": [
+                    {
+                        "id": 27,
+                        "naam": "Portret Hendrik Spaan",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Zwart krijt op papier",
+                        "afmeting": [
+                            10,
+                            8
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    1200,
+                                    1600
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "zwart",
+                "naam": "Willem de Zwart",
+                "url": [
+                    "https://nl.wikipedia.org/wiki/Willem_de_Zwart",
+                    "https://rkd.nl/nl/explore/images/138822"
+                ],
+                "tijd": "1862-1931",
+                "schilderijen": [
+                    {
+                        "id": 37,
+                        "naam": "Boerderij tussen de bomen",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Kleurkrijt op papier",
+                        "afmeting": [
+                            30,
+                            34
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    500,
+                                    700
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 38,
+                        "naam": "Koeien in een weiland",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Zwart krijt op papier ( pap 39x56?????)",
+                        "afmeting": [
+                            39,
                             56
                         ],
                         "taxaties": [
                             {
                                 "1": [
-                                    10000,
-                                    15000
+                                    600,
+                                    800
                                 ]
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "id": 35,
+                        "naam": "Straatmuzikant",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Zwart krijt op papier",
+                        "afmeting": [
+                            39,
+                            20
+                        ],
+                        "taxaties": [
                             {
-                                "2": "fl. 20.000"
+                                "1": [
+                                    300,
+                                    500
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 36,
+                        "naam": "Boerderij aan de waterkant",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Zwart krijt op papier",
+                        "afmeting": [
+                            22,
+                            30
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    400,
+                                    600
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "akkeringa",
+                "naam": "Johannes Evert Akkeringa",
+                "url": "https://nl.wikipedia.org/wiki/Johannes_Evert_Hendrik_Akkeringa",
+                "tijd": "1861-1942",
+                "schilderijen": [
+                    {
+                        "id": 2,
+                        "naam": "Moeder en Kind op een bank bij een boerderij",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Zwart krijt op papier",
+                        "afmeting": [
+                            26,
+                            36
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    500,
+                                    700
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "naam": "Nettenboetsers",
+                        "jaar": null,
+                        "gesigneerd": "ja",
+                        "materiaal": "Zwart krijt op papier",
+                        "afmeting": [
+                            17,
+                            26
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    500,
+                                    700
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "naam": "Meisjes op het strand",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Zwart krijt op papier",
+                        "afmeting": [
+                            24.5,
+                            30
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    800,
+                                    1200
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "daalhoff",
+                "naam": "Henri Daalhoff",
+                "url": "https://nl.wikipedia.org/wiki/Henri_Daalhoff",
+                "tijd": "1867-1953",
+                "schilderijen": [
+                    {
+                        "id": 1,
+                        "naam": "Boerderij bij een pomp.",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Olie op paneel",
+                        "afmeting": [
+                            24,
+                            32
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    500,
+                                    700
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "naam": "Vrouw bij boerderijdeur",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Olie op paneel",
+                        "afmeting": [
+                            32,
+                            24
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    300,
+                                    500
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "naam": "Slootje met wilgen",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Olie op paneel",
+                        "afmeting": [
+                            13,
+                            18
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    200,
+                                    300
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "naam": "Boerderij bij een pomp.(2)",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Olie op paneel",
+                        "afmeting": [
+                            21,
+                            27
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    500,
+                                    700
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "naam": "Achtertuintje",
+                        "gesigneerd": "met initialen",
+                        "jaar": null,
+                        "materiaal": "Olie op paneel",
+                        "afmeting": [
+                            32,
+                            23
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    2500,
+                                    3500
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "naam": "Boerderijfacade",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Olie op paneel",
+                        "afmeting": [
+                            11.5,
+                            16
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    150,
+                                    200
+                                ]
                             }
                         ]
                     }
@@ -638,155 +805,30 @@
         },
         {
             "schilder": {
-                "id": "morel",
-                "naam": "Willem Vaarzon Morel",
-                "url": "https://nl.wikipedia.org/wiki/Willem_Vaarzon_Morel",
-                "tijd": "1868-1955",
-                "schilderijen": [
-                    {
-                        "id": 33,
-                        "naam": "Wieringerwal",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Marouflé",
-                        "afmeting": [
-                            52,
-                            42
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    800,
-                                    1200
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "schilder": {
-                "id": "weissenbruch",
-                "naam": "Hendrik Johannes Weissenbruch",
-                "url": "https://nl.wikipedia.org/wiki/Jan_Hendrik_Weissenbruch",
-                "tijd": "1824-1903",
-                "schilderijen": [
-                    {
-                        "id": 34,
-                        "naam": "Een plas in de polder bij grijs weer",
-                        "gesigneerd": "ja",
-                        "jaar": "1894",
-                        "materiaal": "Aquarel op papier",
-                        "afmeting": [
-                            71,
-                            52
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    4000,
-                                    6000
-                                ]
-                            },
-                            {
-                                "2": "fl.20.000"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "schilder": {
-                "id": "zwart",
-                "naam": "Willem de Zwart",
-                "url": [
-                    "https://nl.wikipedia.org/wiki/Willem_de_Zwart",
-                    "https://rkd.nl/nl/explore/images/138822"
-                ],
-                "tijd": "1862-1931",
-                "schilderijen": [
-                    {
-                        "id": 35,
-                        "naam": "Straatmuzikant",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Zwart krijt op papier",
-                        "afmeting": null,
-                        "taxaties": [
-                            {
-                                "1": [
-                                    300,
-                                    500
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 36,
-                        "naam": "Boerderij aan de waterkant",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Zwart krijt op papier",
-                        "afmeting": [
-                            23,
-                            28
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    400,
-                                    600
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 37,
-                        "naam": "Boerderij tussen de bomen",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Kleurkrijt op papier",
-                        "afmeting": null,
-                        "taxaties": [
-                            {
-                                "1": [
-                                    500,
-                                    700
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 38,
-                        "naam": "Koeien in een weiland",
-                        "gesigneerd": "ja",
-                        "jaar": null,
-                        "materiaal": "Zwart krijt op papier ( pap 39x56?????)",
-                        "afmeting": [
-                            33,
-                            45
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    600,
-                                    800
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "schilder": {
                 "id": "hofker",
                 "naam": "Willem Gerard Hofker",
                 "url": "https://nl.wikipedia.org/wiki/Wim_Hofker",
                 "tijd": "1902-1981",
                 "schilderijen": [
+                    {
+                        "id": 25,
+                        "naam": "Singel/hoek Wijde Vleisteeg in de zomer",
+                        "gesigneerd": "ja",
+                        "jaar": "1968",
+                        "materiaal": "Olie op doek",
+                        "afmeting": [
+                            48,
+                            63
+                        ],
+                        "taxaties": [
+                            {
+                                "1": [
+                                    7000,
+                                    9000
+                                ]
+                            }
+                        ]
+                    },
                     {
                         "id": 23,
                         "naam": "Gezicht op Nes, Ameland",
@@ -794,7 +836,7 @@
                         "jaar": "1950",
                         "materiaal": "Conté, zwart en rood krijt op papier",
                         "afmeting": [
-                            26,
+                            27,
                             38
                         ],
                         "taxaties": [
@@ -814,32 +856,13 @@
                         "materiaal": "Conté en zwart krijt op papier",
                         "afmeting": [
                             28,
-                            46
+                            45
                         ],
                         "taxaties": [
                             {
                                 "1": [
                                     800,
                                     1200
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 25,
-                        "naam": "Singel/hoek Wijde Vleisteeg in de zomer",
-                        "gesigneerd": "ja",
-                        "jaar": "1968",
-                        "materiaal": "Olie op doek",
-                        "afmeting": [
-                            49,
-                            64
-                        ],
-                        "taxaties": [
-                            {
-                                "1": [
-                                    7000,
-                                    9000
                                 ]
                             }
                         ]
