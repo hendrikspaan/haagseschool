@@ -232,6 +232,29 @@
         },
         {
             "schilder": {
+                "id": "hendriks",
+                "naam": "J.Hendriks",
+                "url": "https://www.caputovis.nl/galerie/kunstenaar/hendriks-johan/",
+                "tijd": "1882-1973",
+                "schilderijen": [
+                    {
+                        "id": 33,
+                        "naam": "Winter op Ameland",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "aquarel",
+                        "afmeting": [
+                            27,
+                            38
+                        ],
+                        "taxaties": null
+                        
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
                 "id": "arntzenius",
                 "naam": "Floris Arntzenius",
                 "url": "https://nl.wikipedia.org/wiki/Floris_Arntzenius",
@@ -388,6 +411,18 @@
                     },
                     {
                         "id": 2,
+                        "naam": "Molen",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "paneel",
+                        "afmeting": [
+                            20,
+                            22
+                        ],
+                        "taxaties": null
+                    }, 
+                    {
+                        "id": 2,
                         "naam": "Boerenerf",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -490,6 +525,28 @@
                                 ]
                             }
                         ]
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "israelsj",
+                "naam": "Josef Israëls",
+                "url": "https://nl.wikipedia.org/wiki/Jozef_Isra%C3%ABls",
+                "tijd": "1824-1911",
+                "schilderijen": [
+                    {
+                        "id": 27,
+                        "naam": "Aandacht",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "Zwart krijt op papier",
+                        "afmeting": [
+                            24,
+                            32
+                        ],
+                        "taxaties":null
                     }
                 ]
             }
@@ -652,6 +709,28 @@
         },
         {
             "schilder": {
+                "id": "schild",
+                "naam": "H.D. Schild nakijken",
+                "url": "https://nl.wikipedia.org/wiki/Jan_Toorop",
+                "tijd": "1872-1928",
+                "schilderijen": [
+                    {
+                        "id": 32,
+                        "naam": "Boederij aan het water",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "??",
+                        "afmeting": [
+                            23,
+                            33
+                        ],
+                        "taxaties":null
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
                 "id": "daalhoff",
                 "naam": "Henri Daalhoff",
                 "url": "https://nl.wikipedia.org/wiki/Henri_Daalhoff",
@@ -805,6 +884,41 @@
         },
         {
             "schilder": {
+                "id": "bauer",
+                "naam": "Marius Bauer  nakijken",
+                "url": "https://nl.wikipedia.org/wiki/Jan_Toorop",
+                "tijd": "1867-1932",
+                "schilderijen": [
+                    {
+                        "id": 32,
+                        "naam": "Olijfgaarde bij oosterse stad",
+                        "gesigneerd": "???",
+                        "jaar": null,
+                        "materiaal": "??? ets",
+                        "afmeting": [
+                            20,
+                            31
+                        ],
+                        "taxaties": null
+                    }
+                ,
+                    {
+                        "id": 32,
+                        "naam": "Oosters stadstafreel",
+                        "gesigneerd": "???",
+                        "jaar": null,
+                        "materiaal": "??? ets",
+                        "afmeting": [
+                            11,
+                            20
+                        ],
+                        "taxaties": null
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
                 "id": "hofker",
                 "naam": "Willem Gerard Hofker",
                 "url": "https://nl.wikipedia.org/wiki/Wim_Hofker",
@@ -866,6 +980,18 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "id": 24,
+                        "naam": "Boerenkar Ameland",
+                        "gesigneerd": "ja",
+                        "jaar": "1949",
+                        "materiaal": "???",
+                        "afmeting": [
+                            27,
+                            38
+                        ],
+                        "taxaties": null
                     }
                 ]
             }
