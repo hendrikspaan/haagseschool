@@ -131,18 +131,21 @@ function schildersMenu(parent) {
         let li = ul.appendChild(document.createElement("li"))
         li.innerHTML += "<b>Jaar:</b> " + schilderij.jaar
       }
-      li = ul.appendChild(document.createElement("li"))
-
-      li.innerHTML = "<b>taxatie 2004:</b>" + schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
-      if (schilderij.taxaties[1]) {
+       if (schilderij.taxaties) {
         li = ul.appendChild(document.createElement("li"))
-        li.innerHTML = "<b>taxatie 1978:</b>" + schilderij.taxaties[1]["2"]
+        if (schilderij.taxaties[0]) {
+
+          li.innerHTML = "<b>taxatie 2004:</b>" + schilderij.taxaties[0]["1"][0] + "-" + schilderij.taxaties[0]["1"][1]
+        } if (schilderij.taxaties[1]) {
+          li = ul.appendChild(document.createElement("li"))
+          li.innerHTML = "<b>taxatie 1978:</b>" + schilderij.taxaties[1]["2"]
+        }
       }
       td = tr.appendChild(document.createElement("td"))
       let img = td.appendChild(document.createElement("img"))
       img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))
-      img.width=200;
-      img.height=200;
+      img.width = 200;
+      img.height = 200;
       if (schilderij.afmeting) {
         img.height = schilderij.afmeting[0] * 30;
         img.width = schilderij.afmeting[1] * 30;
