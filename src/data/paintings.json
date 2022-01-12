@@ -20,7 +20,6 @@
                 "tijd": "1828-1903",
                 "schilderijen": [
                     {
-                        "id": 21,
                         "naam": "Visser in roeibootje",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -52,7 +51,6 @@
                 "tijd": "1831-1915",
                 "schilderijen": [
                     {
-                        "id": 31,
                         "naam": "Bomschuiten op het strand",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -84,7 +82,6 @@
                 "tijd": "1839-1917",
                 "schilderijen": [
                     {
-                        "id": 28,
                         "naam": "Visserspaar 'Vrijage' gedateerd: Pulchri 1859",
                         "gesigneerd": "ja",
                         "jaar": "1859",
@@ -116,7 +113,6 @@
                 "tijd": "1844-1910",
                 "schilderijen": [
                     {
-                        "id": 29,
                         "naam": "Witte koe aan het water",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -145,7 +141,6 @@
                 "tijd": "1838-1888",
                 "schilderijen": [
                     {
-                        "id": 30,
                         "naam": "Houtsprokkelaar",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -177,7 +172,6 @@
                 "tijd": "1824-1903",
                 "schilderijen": [
                     {
-                        "id": 34,
                         "naam": "Een plas in de polder bij grijs weer",
                         "gesigneerd": "ja",
                         "jaar": "1894",
@@ -209,7 +203,6 @@
                 "tijd": "1868-1955",
                 "schilderijen": [
                     {
-                        "id": 33,
                         "naam": "Wieringerwal",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -260,7 +253,6 @@
                 "tijd": "1864-1925",
                 "schilderijen": [
                     {
-                        "id": 9,
                         "naam": "Strandgezicht",
                         "gesigneerd": "ja 2x",
                         "jaar": null,
@@ -282,7 +274,6 @@
                         ]
                     },
                     {
-                        "id": 2,
                         "naam": "Figuren in een straat (Spuistraat Den Haag)",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -301,7 +292,6 @@
                         ]
                     },
                     {
-                        "id": 3,
                         "naam": "Haagse bloemenmarkt",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -323,7 +313,6 @@
                         ]
                     },
                     {
-                        "id": 4,
                         "naam": "Gracht in Den Haag",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -342,7 +331,6 @@
                         ]
                     },
                     {
-                        "id": 5,
                         "naam": "Portret Hendrik Spaan",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -361,7 +349,6 @@
                         ]
                     },
                     {
-                        "id": 8,
                         "naam": "Plein bij Paleis Noordeinde.",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -723,7 +710,6 @@
                 "tijd": "1872-1928",
                 "schilderijen": [
                     {
-                        "id": 32,
                         "naam": "Boerin bij sloot van boerderij (500 euro taxatie?)",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -863,7 +849,6 @@
                 "tijd": "1858-1928",
                 "schilderijen": [
                     {
-                        "id": 32,
                         "naam": "Paard",
                         "gesigneerd": "met pen",
                         "jaar": null,
@@ -1052,7 +1037,6 @@
                 "tijd": "1902-1981",
                 "schilderijen": [
                     {
-                        "id": 25,
                         "naam": "Singel/hoek Wijde Vleisteeg in de zomer",
                         "gesigneerd": "ja",
                         "jaar": "1968",
@@ -1071,7 +1055,6 @@
                         ]
                     },
                     {
-                        "id": 23,
                         "naam": "Gezicht op Nes, Ameland",
                         "gesigneerd": "ja",
                         "jaar": "1950",
@@ -1090,7 +1073,6 @@
                         ]
                     },
                     {
-                        "id": 24,
                         "naam": "Boerderij Ameland",
                         "gesigneerd": "ja",
                         "jaar": "1950",
@@ -1109,8 +1091,7 @@
                         ]
                     },
                     {
-                        "id": 24,
-                        "naam": "Boerenkar Ameland",
+                         "naam": "Boerenkar Ameland",
                         "gesigneerd": "ja",
                         "jaar": "1949",
                         "materiaal": "Krijt tekening",
