@@ -123,7 +123,7 @@ function schildersMenu(parent) {
       li.innerHTML = "<b>Materiaal:</b> " + schilderij.materiaal
       if (schilderij.afmeting) {
         let li = ul.appendChild(document.createElement("li"))
-        li.innerHTML += "<b>Afmetingen:</b><br>&nbsp;&nbsp;hoogte=" + schilderij.afmeting[1] + "<br>&nbsp;&nbsp;breedte=" + schilderij.afmeting[0]
+        li.innerHTML += "<b>Afmetingen:</b><br>&nbsp;&nbsp;hoogte=" + schilderij.afmeting[0] + "<br>&nbsp;&nbsp;breedte=" + schilderij.afmeting[1]
       }
       li = ul.appendChild(document.createElement("li"))
       li.innerHTML += "<b>Gesigneerd:</b> " + schilderij.gesigneerd
@@ -141,6 +141,11 @@ function schildersMenu(parent) {
           li.innerHTML = "<b>taxatie 1978:</b>" + schilderij.taxaties[1]["2"]
         }
       }
+      if (schilderij.status) {
+        li = ul.appendChild(document.createElement("li"))
+        li.innerHTML="<b>Status</b>:"+schilderij.status
+      }
+    
       td = tr.appendChild(document.createElement("td"))
       let img = td.appendChild(document.createElement("img"))
       img.src = "./images/" + schilder.id + (j + 1) + ".jpg"//fotos.get(schilder.id + (j + 1))

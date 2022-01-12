@@ -238,7 +238,6 @@
                 "tijd": "1882-1973",
                 "schilderijen": [
                     {
-                        "id": 33,
                         "naam": "Winter op Ameland",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -247,8 +246,8 @@
                             27,
                             38
                         ],
-                        "taxaties": null
-                        
+                        "taxaties": null,
+                        "status": "verkocht"
                     }
                 ]
             }
@@ -391,7 +390,6 @@
                 "tijd": "1861-1923",
                 "schilderijen": [
                     {
-                        "id": 1,
                         "naam": "Dorpskerk met korenakker",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -410,7 +408,6 @@
                         ]
                     },
                     {
-                        "id": 2,
                         "naam": "Molen",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -419,10 +416,10 @@
                             20,
                             22
                         ],
-                        "taxaties": null
-                    }, 
+                        "taxaties": null,
+                        "status": "verkocht"
+                    },
                     {
-                        "id": 2,
                         "naam": "Boerenerf",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -441,7 +438,6 @@
                         ]
                     },
                     {
-                        "id": 20,
                         "naam": "Boerderij in de zomer",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -460,7 +456,6 @@
                         ]
                     },
                     {
-                        "id": 1,
                         "naam": "Boerderij",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -479,7 +474,6 @@
                         ]
                     },
                     {
-                        "id": 3,
                         "naam": "Boerderij tussen bomen",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -508,7 +502,6 @@
                 "tijd": "1865-1934",
                 "schilderijen": [
                     {
-                        "id": 27,
                         "naam": "Portret Hendrik Spaan",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -537,7 +530,6 @@
                 "tijd": "1824-1911",
                 "schilderijen": [
                     {
-                        "id": 27,
                         "naam": "Aandacht",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -546,7 +538,8 @@
                             24,
                             32
                         ],
-                        "taxaties":null
+                        "taxaties": null,
+                        "status": "verdwenen"
                     }
                 ]
             }
@@ -562,7 +555,6 @@
                 "tijd": "1862-1931",
                 "schilderijen": [
                     {
-                        "id": 37,
                         "naam": "Boerderij tussen de bomen",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -581,7 +573,6 @@
                         ]
                     },
                     {
-                        "id": 38,
                         "naam": "Koeien in een weiland",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -600,7 +591,6 @@
                         ]
                     },
                     {
-                        "id": 35,
                         "naam": "Straatmuzikant",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -619,7 +609,6 @@
                         ]
                     },
                     {
-                        "id": 36,
                         "naam": "Boerderij aan de waterkant",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -648,8 +637,7 @@
                 "tijd": "1861-1942",
                 "schilderijen": [
                     {
-                        "id": 2,
-                        "naam": "Moeder en Kind op een bank bij een boerderij",
+                         "naam": "Moeder en Kind op een bank bij een boerderij",
                         "gesigneerd": "ja",
                         "jaar": null,
                         "materiaal": "Zwart krijt op papier",
@@ -667,8 +655,7 @@
                         ]
                     },
                     {
-                        "id": 1,
-                        "naam": "Nettenboetsers",
+                         "naam": "Nettenboetsers",
                         "jaar": null,
                         "gesigneerd": "ja",
                         "materiaal": "Zwart krijt op papier",
@@ -686,8 +673,7 @@
                         ]
                     },
                     {
-                        "id": 3,
-                        "naam": "Meisjes op het strand",
+                         "naam": "Meisjes op het strand",
                         "gesigneerd": "ja",
                         "jaar": null,
                         "materiaal": "Zwart krijt op papier",
@@ -710,13 +696,13 @@
         {
             "schilder": {
                 "id": "schild",
-                "naam": "H.D. Schild nakijken",
-                "url": "https://nl.wikipedia.org/wiki/Jan_Toorop",
+                "naam": "H.D. Schild",
+                "url": null,
                 "tijd": "1872-1928",
                 "schilderijen": [
                     {
                         "id": 32,
-                        "naam": "Boederij aan het water",
+                        "naam": "Boerin bij sloot van boerderij (500 euro taxatie?)",
                         "gesigneerd": "ja",
                         "jaar": null,
                         "materiaal": "??",
@@ -724,7 +710,7 @@
                             23,
                             33
                         ],
-                        "taxaties":null
+                        "taxaties": null
                     }
                 ]
             }
@@ -737,7 +723,6 @@
                 "tijd": "1867-1953",
                 "schilderijen": [
                     {
-                        "id": 1,
                         "naam": "Boerderij bij een pomp.",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -756,7 +741,6 @@
                         ]
                     },
                     {
-                        "id": 2,
                         "naam": "Vrouw bij boerderijdeur",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -775,7 +759,6 @@
                         ]
                     },
                     {
-                        "id": 3,
                         "naam": "Slootje met wilgen",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -794,7 +777,6 @@
                         ]
                     },
                     {
-                        "id": 5,
                         "naam": "Boerderij bij een pomp.(2)",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -813,7 +795,6 @@
                         ]
                     },
                     {
-                        "id": 5,
                         "naam": "Achtertuintje",
                         "gesigneerd": "met initialen",
                         "jaar": null,
@@ -832,7 +813,6 @@
                         ]
                     },
                     {
-                        "id": 3,
                         "naam": "Boerderijfacade",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -885,31 +865,49 @@
         {
             "schilder": {
                 "id": "bauer",
-                "naam": "Marius Bauer  nakijken",
-                "url": "https://nl.wikipedia.org/wiki/Jan_Toorop",
+                "naam": "Marius Bauer",
+                "url": null,
                 "tijd": "1867-1932",
                 "schilderijen": [
                     {
-                        "id": 32,
                         "naam": "Olijfgaarde bij oosterse stad",
                         "gesigneerd": "???",
                         "jaar": null,
-                        "materiaal": "??? ets",
+                        "materiaal": "ets",
                         "afmeting": [
                             20,
                             31
                         ],
                         "taxaties": null
-                    }
-                ,
+                    },
                     {
-                        "id": 32,
                         "naam": "Oosters stadstafreel",
-                        "gesigneerd": "???",
+                        "gesigneerd": "ja",
                         "jaar": null,
-                        "materiaal": "??? ets",
+                        "materiaal": "ets",
                         "afmeting": [
                             11,
+                            20
+                        ],
+                        "taxaties": null
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "redon",
+                "naam": "Odilon Redon",
+                "url": null,
+                "tijd": "1840-1960",
+                "schilderijen": [
+                    {
+                        "naam": "Druidesse",
+                        "gesigneerd": "???",
+                        "jaar": null,
+                        "materiaal": "litho",
+                        "afmeting": [
+                            23,
                             20
                         ],
                         "taxaties": null
@@ -986,7 +984,7 @@
                         "naam": "Boerenkar Ameland",
                         "gesigneerd": "ja",
                         "jaar": "1949",
-                        "materiaal": "???",
+                        "materiaal": "Krijt tekening",
                         "afmeting": [
                             27,
                             38
@@ -1004,7 +1002,18 @@
                 "tijd": "1902-1999",
                 "schilderijen": [
                     {
-                        "id": 26,
+                        "naam": "Pioenroos",
+                        "gesigneerd": "ja",
+                        "jaar": "1975",
+                        "materiaal": "Aquarel",
+                        "afmeting": [
+                            28,
+                            36
+                        ],
+                        "taxaties": null,
+                        "status": "verkocht"
+                    },
+                    {
                         "naam": "Dennenappels",
                         "gesigneerd": "ja",
                         "jaar": "1975",
@@ -1021,6 +1030,18 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "naam": "Distel",
+                        "gesigneerd": "ja",
+                        "jaar": "1975",
+                        "materiaal": "Aquarel",
+                        "afmeting": [
+                            35,
+                            17
+                        ],
+                        "taxaties": null,
+                        "status": "verkocht"
                     }
                 ]
             }
