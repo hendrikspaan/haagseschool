@@ -608,7 +608,7 @@
                             }
                         ]
                     },
-                    {
+                   {
                         "naam": "Boerderij aan de waterkant",
                         "gesigneerd": "ja",
                         "jaar": null,
@@ -623,9 +623,31 @@
                                     400,
                                     600
                                 ]
-                            }
+                             }
                         ]
-                    }
+                    },
+                    {
+                         "naam": "Vrouw met bloem",
+                         "gesigneerd": "???",
+                         "jaar": null,
+                         "materiaal": "ets",
+                         "afmeting": [
+                             14,
+                             19
+                         ],
+                         "taxaties":null
+                     },
+                     {
+                          "naam": "Boerderij",
+                          "gesigneerd": "ja",
+                          "jaar": null,
+                          "materiaal": "ets",
+                          "afmeting": [
+                              12,
+                              16
+                          ],
+                          "taxaties":null
+                      }
                 ]
             }
         },
@@ -930,6 +952,92 @@
                         "afmeting": [
                             18,
                             24
+                        ],
+                        "taxaties": null
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "onbekend",
+                "naam": "onbekend",
+                "url": null,
+                "tijd": "???",
+                "schilderijen": [
+                    {
+                        "naam": "Man met zeis",
+                        "gesigneerd": "nee",
+                        "jaar": null,
+                        "materiaal": "ets",
+                        "afmeting": [
+                            43,
+                            53
+                        ],
+                        "taxaties": null
+                    },
+                    {
+                        "naam": "Koe",
+                        "gesigneerd": "nee",
+                        "jaar": null,
+                        "materiaal": "paneel",
+                        "afmeting": [
+                            13,
+                            17
+                        ],
+                        "taxaties": null
+                    },
+                    {
+                        "naam": "Schaapsherder (afmetingen?)",
+                        "gesigneerd": "nee",
+                        "jaar": null,
+                        "materiaal": "???",
+                        "afmeting": [
+                            19.5,
+                            12
+                        ],
+                        "taxaties": null
+                    },
+                    {
+                        "naam": "Koeien in landschap",
+                        "gesigneerd": "nee",
+                        "jaar": null,
+                        "materiaal": "ets",
+                        "afmeting": [
+                            12,
+                            18.5
+                        ],
+                        "taxaties": null
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
+                "id": "spaan",
+                "naam": "Hendrik Spaan",
+                "url": null,
+                "tijd": "1851-1915",
+                "schilderijen": [
+                    {
+                        "naam": "zelfportret",
+                        "gesigneerd": "nee",
+                        "jaar": null,
+                        "materiaal": "Doek",
+                        "afmeting": [
+                            58,
+                            47
+                        ],
+                        "taxaties": null
+                    },
+                    {
+                        "naam": "zelfportret",
+                        "gesigneerd": "????",
+                        "jaar": null,
+                        "materiaal": "Doek",
+                        "afmeting": [
+                            58,
+                            47
                         ],
                         "taxaties": null
                     }
