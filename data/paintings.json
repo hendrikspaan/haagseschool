@@ -917,6 +917,27 @@
         },
         {
             "schilder": {
+                "id": "tholen",
+                "naam": "W.H.Tholen",
+                "url": null,
+                "tijd": "1860-1931",
+                "schilderijen": [
+                    {
+                        "naam": "Boerderij",
+                        "gesigneerd": "ja",
+                        "jaar": null,
+                        "materiaal": "ets",
+                        "afmeting": [
+                            18,
+                            24
+                        ],
+                        "taxaties": null
+                    }
+                ]
+            }
+        },
+        {
+            "schilder": {
                 "id": "hofker",
                 "naam": "Willem Gerard Hofker",
                 "url": "https://nl.wikipedia.org/wiki/Wim_Hofker",
