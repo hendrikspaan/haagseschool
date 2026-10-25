@@ -290,24 +290,6 @@ function schildersMenu(parent) {
         li.innerHTML = "<strong>Status:</strong> <span>" + schilderij.status + "</span>";
       }
 
-      if (schilderij.taxaties && schilderij.taxaties.length > 0) {
-        const taxBox = topPart.appendChild(document.createElement('div'));
-        taxBox.classList.add("artwork-taxaties");
-
-        if (schilderij.taxaties[0] && schilderij.taxaties[0]["1"]) {
-          const t1 = taxBox.appendChild(document.createElement('div'));
-          t1.classList.add("taxatie-badge");
-          const val = schilderij.taxaties[0]["1"];
-          t1.innerHTML = "🏷️ <strong>Taxatie 2004:</strong> € " + val[0].toLocaleString('nl-NL') + " – € " + val[1].toLocaleString('nl-NL');
-        }
-
-        if (schilderij.taxaties[1] && schilderij.taxaties[1]["2"]) {
-          const t2 = taxBox.appendChild(document.createElement('div'));
-          t2.classList.add("taxatie-badge");
-          t2.innerHTML = "🏷️ <strong>Historische taxatie 1978:</strong> " + schilderij.taxaties[1]["2"];
-        }
-      }
-
       const photoNotice = details.appendChild(document.createElement('div'));
       photoNotice.classList.add("artwork-photo-notice");
       photoNotice.innerHTML = "📷 <em>Rijksmuseum-fotografie Henni van Beek (12-02-2022) — Hoge resolutie opvraagbaar via <a href=\"mailto:herbrand.hofker@gmail.com\">herbrand.hofker@gmail.com</a></em>";
