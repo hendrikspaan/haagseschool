@@ -9,6 +9,51 @@ const PAINTERS_WITH_PORTRAIT = new Set([
   'zwart', 'akkeringa', 'toorop', 'bauer', 'hofker', 'rueter'
 ]);
 
+let selectPainterFn = null;
+
+function switchTab(tabId) {
+  const tabcontent = document.getElementsByClassName("tabcontent");
+  for (let i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  const tablinks = document.getElementsByClassName("tablink");
+  for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active-tab");
+  }
+
+  const targetContent = document.getElementById(tabId);
+  if (targetContent) {
+    targetContent.style.display = "block";
+  }
+
+  const targetBtn = document.querySelector(`.tablink[data-tab="${tabId}"]`);
+  if (targetBtn) {
+    targetBtn.classList.add("active-tab");
+  }
+}
+
+function handleHashChange() {
+  const rawHash = (window.location.hash || '').replace(/^#\/?/, '');
+  const parts = rawHash.split('/');
+  const tab = parts[0] || 'over';
+  const painterId = parts[1] || null;
+
+  if (tab === 'over' || tab === 'geschiedenis') {
+    switchTab(tab);
+  } else if (tab === 'schilders') {
+    switchTab('schilders');
+    if (selectPainterFn) {
+      if (painterId) {
+        selectPainterFn(painterId, false);
+      }
+    }
+  } else {
+    // fallback naar over
+    switchTab('over');
+  }
+}
+
 function mainTitle(parent) {
   const bar = parent.appendChild(document.createElement('header'));
   bar.classList.add("main-title-bar");
@@ -55,6 +100,7 @@ function hoofdMenu(parent) {
     a.classList.add("btn-museum-link");
     a.href = json.urls[i][1];
     a.target = "_blank";
+    a.rel = "noopener noreferrer";
     a.innerHTML = "🏛️ " + json.urls[i][0] + " &#8599;";
   }
 
@@ -62,6 +108,7 @@ function hoofdMenu(parent) {
   pdfA.classList.add("btn-museum-link");
   pdfA.href = "./data/hendrik_spaan.pdf";
   pdfA.target = "_blank";
+  pdfA.rel = "noopener noreferrer";
   pdfA.innerHTML = "📄 Bionda-studie (PDF) &#8599;";
 }
 
@@ -74,39 +121,22 @@ function tabMenu(parent) {
   function createMenuItem(tabmenuContainer, tabpageContainer, id, title, addContent) {
     const btn = tabmenuContainer.appendChild(document.createElement('button'));
     btn.classList.add("tablink");
+    btn.dataset.tab = id;
     btn.innerText = title;
-    btn.addEventListener("click", () => openPage(id, btn));
+    btn.addEventListener("click", () => {
+      window.location.hash = '#' + id;
+    });
 
     const content = tabpageContainer.appendChild(document.createElement('div'));
     content.id = id;
     content.classList.add("tabcontent");
     content.style.display = "none";
     addContent(content);
-
-    function openPage(pageName, elmnt) {
-      const tabcontent = document.getElementsByClassName("tabcontent");
-      for (let i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-
-      const tablinks = document.getElementsByClassName("tablink");
-      for (let i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active-tab");
-      }
-
-      document.getElementById(pageName).style.display = "block";
-      elmnt.classList.add("active-tab");
-    }
   }
 
   createMenuItem(menuContainer, pageContainer, "over", "🏛️ Over de Collectie", (parent) => overCollectie(parent));
   createMenuItem(menuContainer, pageContainer, "schilders", "🎨 Kunstenaars & Werken", (parent) => schildersMenu(parent));
   createMenuItem(menuContainer, pageContainer, "geschiedenis", "📖 Geschiedenis (Bionda 1989)", (parent) => epub(parent, 'bionda', 18));
-
-  const firstTab = menuContainer.querySelector('.tablink');
-  if (firstTab) {
-    firstTab.click();
-  }
 }
 
 function overCollectie(parent) {
@@ -158,14 +188,20 @@ function schildersMenu(parent) {
 
   const menuContainer = parent.appendChild(document.createElement('div'));
   menuContainer.classList.add("schilders-grid");
+  menuContainer.id = "schilders-grid";
 
   const schilderDiv = parent.appendChild(document.createElement('div'));
   schilderDiv.classList.add("artworks-display");
 
+  const painterMap = new Map();
+
   for (let i = 0; i < json.schilders.length; i++) {
     const schilder = json.schilders[i].schilder;
+    painterMap.set(schilder.id, schilder);
+
     const btn = menuContainer.appendChild(document.createElement('button'));
     btn.classList.add("schilder-card-btn");
+    btn.dataset.painterId = schilder.id;
 
     if (PAINTERS_WITH_PORTRAIT.has(schilder.id)) {
       const avatar = btn.appendChild(document.createElement('img'));
@@ -191,22 +227,28 @@ function schildersMenu(parent) {
     const count = schilder.schilderijen ? schilder.schilderijen.length : 0;
     badge.innerText = count + (count === 1 ? " werk" : " werken");
 
-    btn.addEventListener("click", () => openPainter(schilder, btn));
+    btn.addEventListener("click", () => {
+      window.location.hash = '#schilders/' + schilder.id;
+    });
   }
 
-  function openPainter(schilder, activeBtn) {
-    const allBtns = menuContainer.querySelectorAll('.schilder-card-btn');
-    allBtns.forEach(b => b.classList.remove('active-painter'));
-    if (activeBtn) {
-      activeBtn.classList.add('active-painter');
-    }
-
+  function renderPainterDetails(schilder, shouldScroll) {
     schilderDiv.innerHTML = "";
 
     const banner = schilderDiv.appendChild(document.createElement('div'));
     banner.classList.add("selected-painter-banner");
 
     const info = banner.appendChild(document.createElement('div'));
+
+    const backBtn = info.appendChild(document.createElement('button'));
+    backBtn.classList.add("back-to-painters-btn");
+    backBtn.innerHTML = "&#10094; Alle kunstenaars";
+    backBtn.title = "Ga terug naar het overzicht van alle schilders";
+    backBtn.addEventListener("click", () => {
+      window.location.hash = '#schilders';
+      menuContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
     const bTitle = info.appendChild(document.createElement('div'));
     bTitle.classList.add("selected-painter-title");
     bTitle.innerText = schilder.naam;
@@ -221,6 +263,7 @@ function schildersMenu(parent) {
       wiki.classList.add("wiki-btn");
       wiki.href = schilder.url;
       wiki.target = "_blank";
+      wiki.rel = "noopener noreferrer";
       wiki.innerHTML = "🌐 Bekijk op Wikipedia &#8599;";
     }
 
@@ -243,9 +286,9 @@ function schildersMenu(parent) {
       const imgSrc = "./images/" + schilder.id + (j + 1) + ".jpg";
       img.src = imgSrc;
       img.alt = schilderij.naam;
-      img.title = "Klik om de foto in ware grootte te openen";
+      img.title = "Klik om de foto in ware grootte te openen in een nieuw tabblad";
       img.addEventListener("click", () => {
-        window.open(imgSrc, '_blank');
+        window.open(imgSrc, '_blank', 'noopener,noreferrer');
       });
 
       // Rechterkolom: gegevens
@@ -292,17 +335,34 @@ function schildersMenu(parent) {
 
       const photoNotice = details.appendChild(document.createElement('div'));
       photoNotice.classList.add("artwork-photo-notice");
-      photoNotice.innerHTML = "📷 <em>Rijksmuseum-fotografie Henni van Beek (12-02-2022) — Hoge resolutie opvraagbaar via <a href=\"mailto:herbrand.hofker@gmail.com\">herbrand.hofker@gmail.com</a></em>";
+      photoNotice.innerHTML = "📷 <em>Rijksmuseum-fotografie Henni van Beek (12-02-2022) — Hoge resolutie digitaal opvraagbaar via <a href=\"mailto:herbrand.hofker@gmail.com\">herbrand.hofker@gmail.com</a></em>";
     }
 
-    // Scroll zachtjes naar de schilderijen
-    banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (shouldScroll) {
+      banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
-  // Open eerste schilder standaard
-  const firstBtn = menuContainer.querySelector('.schilder-card-btn');
-  if (firstBtn && json.schilders.length > 0) {
-    openPainter(json.schilders[0].schilder, firstBtn);
+  selectPainterFn = function(painterId, shouldScroll = true) {
+    const schilder = painterMap.get(painterId) || (json.schilders[0] ? json.schilders[0].schilder : null);
+    if (!schilder) return;
+
+    const allBtns = menuContainer.querySelectorAll('.schilder-card-btn');
+    allBtns.forEach(b => {
+      if (b.dataset.painterId === schilder.id) {
+        b.classList.add('active-painter');
+      } else {
+        b.classList.remove('active-painter');
+      }
+    });
+
+    renderPainterDetails(schilder, shouldScroll);
+  };
+
+  // Open eerste schilder als standaard weergave
+  if (json.schilders.length > 0) {
+    const firstPainter = json.schilders[0].schilder;
+    selectPainterFn(firstPainter.id, false);
   }
 }
 
@@ -313,4 +373,8 @@ function site(div) {
   mainTitle(div);
   hoofdMenu(div);
   tabMenu(div);
+
+  // Hash router activeren
+  window.addEventListener('hashchange', handleHashChange);
+  handleHashChange();
 }
