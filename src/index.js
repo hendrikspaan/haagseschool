@@ -69,14 +69,59 @@ function tabMenu(parent) {
       }
 
       document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundColor = "green";
+      elmnt.style.backgroundColor = "var(--contrast-bg-color, #870d4d)";
     }
   }
 
-  createMenuItem(menuContainer, pageContainer, "geschiedenis", "Geschiedenis van Hendik Spaan als kunstverzamelaar",
+  createMenuItem(menuContainer, pageContainer, "over", "Over de Collectie", (parent) => overCollectie(parent))
+
+  createMenuItem(menuContainer, pageContainer, "geschiedenis", "Geschiedenis van Hendrik Spaan (Bionda 1989)",
     (parent) => epub(parent, 'bionda', 18))
 
-  createMenuItem(menuContainer, pageContainer, "schilders", "Schilders van de Haagse School", (parent) => schildersMenu(parent))
+  createMenuItem(menuContainer, pageContainer, "schilders", "Collectie & Kunstwerken", (parent) => schildersMenu(parent))
+
+  const firstTab = menuContainer.querySelector('.tablink');
+  if (firstTab) {
+    firstTab.click();
+  }
+}
+
+function overCollectie(parent) {
+  const container = parent.appendChild(document.createElement('div'));
+  container.classList.add("over-collectie");
+
+  const title = container.appendChild(document.createElement('h2'));
+  title.innerText = "Over de Collectie Hendrik Spaan (1851–1915)";
+
+  const p1 = container.appendChild(document.createElement('p'));
+  p1.innerHTML = "Deze website documenteert de kunstwerken die in het bezit waren van <strong>wijlen mevrouw Antoinette Petronella Spaan (1925–2024)</strong>, de enige kleindochter van de Haagse kunstverzamelaar en mecenas <strong>Hendrik Spaan (1851–1915)</strong>.";
+
+  const p2 = container.appendChild(document.createElement('p'));
+  p2.innerHTML = "Hendrik Spaan, van beroep bakker en woonachtig aan de Korte Beestenmarkt 2 te Den Haag, bouwde vanuit zijn persoonlijke contacten met eigentijdse kunstenaars een unieke en hoogwaardige verzameling op. Deze omvatte niet uitsluitend de meesters van de Haagse School (zoals Willem Maris, Paul Gabriël, H.W. Mesdag en Anton Mauve), maar evenzeer toonaangevende Amsterdamse impressionisten, symbolisten en tijdgenoten — waaronder Floris Arntzenius, Willem de Zwart, Isaac Israëls, Jan Toorop, Marius Bauer en Odilon Redon, alsmede latere werken van Willem Gerard Hofker en Maria Hofker-Rueter.";
+
+  const h3_1 = container.appendChild(document.createElement('h3'));
+  h3_1.innerText = "Museale schenking aan het Kunstmuseum Den Haag (1977)";
+
+  const p3 = container.appendChild(document.createElement('p'));
+  p3.innerHTML = "Het overgrote deel van zijn oorspronkelijke verzameling werd in 1977 nagelaten aan het toenmalige Haags Gemeentemuseum (thans <strong>Kunstmuseum Den Haag</strong>). Hiertoe behoort onder meer het bekende topstuk <em>Morgenstond</em> van Willem Maris, evenals de door meesterschilder Willem de Zwart vervaardigde portretten van Hendrik Spaan en diens echtgenote in de vaste museumcollectie.";
+
+  const h3_2 = container.appendChild(document.createElement('h3'));
+  h3_2.innerText = "Particulier familie-erfgoed & Professionele fotografie";
+
+  const p4 = container.appendChild(document.createElement('p'));
+  p4.innerHTML = "De op deze website gedocumenteerde 49 schilderijen en tekeningen vormden het complementaire particuliere familie-erfgoed dat onder berusting was gebleven bij zijn enige kleindochter mw. A.P. Spaan.";
+
+  const highlight = container.appendChild(document.createElement('div'));
+  highlight.classList.add("over-highlight");
+  highlight.innerHTML = "<p><strong>Professionele Fotografie & Museale Initiatieven (12 februari 2022):</strong><br>" +
+    "Voor de integrale visuele catalogus van de Collectie Hendrik Spaan zijn alle 49 bewaard gebleven particuliere familiestukken op zaterdag <strong>12 februari 2022</strong> professioneel en kleurecht gefotografeerd door Rijksmuseum-fotograaf <strong>Henni van Beek</strong>. " +
+    "Dit initiatief en de organisatie hiervan vonden plaats door achterkleinzoon Herbrand Hofker ten behoeve van een mogelijke overzichtstentoonstelling bij Kunstmuseum Den Haag rondom Hendrik Spaan en ter bestendige wetenschappelijke ontsluiting en behoud van dit familie-erfgoed.</p>";
+
+  const h3_3 = container.appendChild(document.createElement('h3'));
+  h3_3.innerText = "Wetenschappelijk onderzoek Richard Bionda (Oud Holland, 1989)";
+
+  const p5 = container.appendChild(document.createElement('p'));
+  p5.innerHTML = "In 1989 wijdde kunsthistoricus Richard Bionda in het toonaangevende tijdschrift <em>Oud Holland</em> (vol. 103, nr. 4) een uitgebreide wetenschappelijke studie aan Hendrik Spaan: <em>'De Haagse kunstverzamelaar Hendrik Spaan (1851-1915)'</em>. Daarin beschrijft hij Spaan als een bepalende, onterecht over het hoofd geziene verzamelaar die een directe rol speelde in het Haagse kunstklimaat van het fin de siècle. Deze publicatie is integraal te raadplegen onder het tabblad <strong>Geschiedenis van Hendrik Spaan</strong>.";
 }
 
 function schildersMenu(parent) {
