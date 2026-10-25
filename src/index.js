@@ -115,7 +115,8 @@ function overCollectie(parent) {
   highlight.classList.add("over-highlight");
   highlight.innerHTML = "<p><strong>Professionele Fotografie & Museale Initiatieven (12 februari 2022):</strong><br>" +
     "Voor de integrale visuele catalogus van de Collectie Hendrik Spaan zijn alle 49 bewaard gebleven particuliere familiestukken op zaterdag <strong>12 februari 2022</strong> professioneel en kleurecht gefotografeerd door Rijksmuseum-fotograaf <strong>Henni van Beek</strong>. " +
-    "Dit initiatief en de organisatie hiervan vonden plaats door achterkleinzoon Herbrand Hofker ten behoeve van een mogelijke overzichtstentoonstelling bij Kunstmuseum Den Haag rondom Hendrik Spaan en ter bestendige wetenschappelijke ontsluiting en behoud van dit familie-erfgoed.</p>";
+    "Dit initiatief en de organisatie hiervan vonden plaats door achterkleinzoon Herbrand Hofker ten behoeve van een mogelijke overzichtstentoonstelling bij Kunstmuseum Den Haag rondom Hendrik Spaan en ter bestendige wetenschappelijke ontsluiting en behoud van dit familie-erfgoed.</p>" +
+    "<p style=\"margin-top: 12px; font-size: 0.95em; color: #444;\">📷 <em>De originele digitale foto's in hoge resolutie zijn voor museale doeleinden, kunsthistorisch onderzoek en verificatie kosteloos opvraagbaar via: <a href=\"mailto:herbrand.hofker@gmail.com\" style=\"color: var(--contrast-bg-color, #870d4d); font-weight: bold;\">herbrand.hofker@gmail.com</a></em></p>";
 
   const h3_3 = container.appendChild(document.createElement('h3'));
   h3_3.innerText = "Wetenschappelijk onderzoek Richard Bionda (Oud Holland, 1989)";
