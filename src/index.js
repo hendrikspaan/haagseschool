@@ -90,7 +90,7 @@ function hoofdMenu(parent) {
   h2.innerText = "Haags kunstverzamelaar en mecenas";
 
   const p = content.appendChild(document.createElement('p'));
-  p.innerText = "Hendrik Spaan (1851–1915) bouwde als bakker aan de Korte Beestenmarkt in Den Haag een hechte band op met eigentijdse kunstenaars. Het leeuwendeel van zijn verzameling werd in 1977 nagelaten aan het Kunstmuseum Den Haag. De hier gedocumenteerde catalogus omvat het complementaire particuliere familie-erfgoed dat onder berusting was gebleven bij zijn enige kleindochter, wijlen mevrouw Antoinette Petronella Spaan (1925–2024).";
+  p.innerText = "Hendrik Spaan (1851–1915) bouwde als banketbakker aan de Korte Beestenmarkt in Den Haag een hechte band op met eigentijdse kunstenaars. Het leeuwendeel van zijn verzameling werd in 1977 nagelaten aan het Kunstmuseum Den Haag. De hier gedocumenteerde catalogus omvat het complementaire particuliere familie-erfgoed dat onder berusting was gebleven bij zijn enige kleindochter, wijlen mevrouw Antoinette Petronella Spaan (1925–2024).";
 
   const links = content.appendChild(document.createElement('div'));
   links.classList.add("hero-links");
@@ -150,7 +150,7 @@ function overCollectie(parent) {
   p1.innerHTML = "Deze website documenteert de kunstwerken die in bezit waren van <strong>wijlen mevrouw Antoinette Petronella Spaan (1925–2024)</strong>, de enige kleindochter van de Haagse kunstverzamelaar en mecenas <strong>Hendrik Spaan (1851–1915)</strong>.";
 
   const p2 = container.appendChild(document.createElement('p'));
-  p2.innerHTML = "Hendrik Spaan, van beroep bakker en woonachtig aan de Korte Beestenmarkt 2 te Den Haag, bouwde vanuit zijn persoonlijke contacten met eigentijdse kunstenaars een unieke en hoogwaardige verzameling op. Deze omvatte niet uitsluitend meesters van de Haagse School (zoals Willem Maris, Paul Gabriël, H.W. Mesdag en Anton Mauve), maar evenzeer toonaangevende Amsterdamse impressionisten, symbolisten en tijdgenoten — waaronder Floris Arntzenius, Willem de Zwart, Isaac Israëls, Jan Toorop, Marius Bauer en Odilon Redon, alsmede latere werken van Willem Gerard Hofker en Maria Hofker-Rueter.";
+  p2.innerHTML = "Hendrik Spaan, van beroep banketbakker en gevestigd aan de Korte Beestenmarkt 2 te Den Haag (destijds recht tegenover het Koninklijk Conservatorium), bouwde vanuit zijn persoonlijke contacten met eigentijdse kunstenaars een unieke en hoogwaardige verzameling op. Deze omvatte niet uitsluitend meesters van de Haagse School (zoals Willem Maris, Paul Gabriël, H.W. Mesdag en Anton Mauve), maar evenzeer toonaangevende Amsterdamse impressionisten, symbolisten en tijdgenoten — waaronder Floris Arntzenius, Willem de Zwart, Isaac Israëls, Jan Toorop, Marius Bauer en Odilon Redon, alsmede latere werken van Willem Gerard Hofker en Maria Hofker-Rueter.";
 
   const h3_1 = container.appendChild(document.createElement('h3'));
   h3_1.innerText = "Museale schenking aan het Kunstmuseum Den Haag (1977)";
