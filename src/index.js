@@ -153,10 +153,192 @@ function overCollectie(parent) {
   p2.innerHTML = "Hendrik Spaan, van beroep banketbakker en gevestigd aan de Korte Beestenmarkt 2 te Den Haag (destijds recht tegenover het Koninklijk Conservatorium), bouwde vanuit zijn persoonlijke contacten met eigentijdse kunstenaars een unieke en hoogwaardige verzameling op. Deze omvatte niet uitsluitend meesters van de Haagse School (zoals Willem Maris, Paul Gabriël, H.W. Mesdag en Anton Mauve), maar evenzeer toonaangevende Amsterdamse impressionisten, symbolisten en tijdgenoten — waaronder Floris Arntzenius, Willem de Zwart, Isaac Israëls, Jan Toorop, Marius Bauer en Odilon Redon, alsmede latere werken van Willem Gerard Hofker en Maria Hofker-Rueter.";
 
   const h3_1 = container.appendChild(document.createElement('h3'));
-  h3_1.innerText = "Museale schenking aan het Kunstmuseum Den Haag (1977)";
+  h3_1.innerText = "Museaal Legaat Kunstmuseum Den Haag & Stichting H. Spaan Fonds (1977)";
 
   const p3 = container.appendChild(document.createElement('p'));
-  p3.innerHTML = "Het overgrote deel van zijn oorspronkelijke verzameling werd in 1977 nagelaten aan het toenmalige Haags Gemeentemuseum (thans <strong>Kunstmuseum Den Haag</strong>). Hiertoe behoort onder meer het bekende topstuk <em>Morgenstond</em> van Willem Maris, evenals de door meesterschilder Willem de Zwart vervaardigde portretten van Hendrik Spaan en diens echtgenote in de vaste museumcollectie.";
+  p3.innerHTML = "Een essentieel deel van de oorspronkelijke verzameling van Hendrik Spaan werd in 1977 nagelaten aan de gemeente 's-Gravenhage ter plaatsing in het toenmalige Haags Gemeentemuseum (thans <strong>Kunstmuseum Den Haag</strong>). Dit geschiedde via het testamentaire legaat van zijn dochter, <strong>mejuffrouw Hendrika Spaan</strong> (1888–1977), die woonde aan de Laan van Meerdervoort 151 en op 24 april 1977 overleed. Bij besluit van de gemeenteraad van Den Haag op <strong>5 september 1977</strong> werd haar legaat officieel en met bijzondere erkentelijkheid aanvaard.";
+
+  const p3_fond = container.appendChild(document.createElement('p'));
+  p3_fond.innerHTML = "Uit de verkoopopbrengst van haar herenhuis aan de Laan van Meerdervoort werd tevens de <strong>'Stichting H. Spaan Fonds'</strong> opgericht. Blijkens de officiële statuten treedt de directeur van het Gemeentemuseum qualitate qua op als voorzitter van het bestuur, bijgestaan door notaris mr. L.W.F.H. van Peski en de voorzitter van het Schilderkundig Genootschap Pulchri Studio. Doel van het fonds is om uit de jaarlijkse renteopbrengst kunstwerken aan te kopen van toonaangevende Haagse meesters ten behoeve van de vaste museumcollectie.";
+
+  // De 4 museumstukken in beeld
+  const museumGridTitle = container.appendChild(document.createElement('h4'));
+  museumGridTitle.classList.add("museum-subsection-title");
+  museumGridTitle.innerText = "Schilderijen uit het Legaat Spaan in de collectie van Kunstmuseum Den Haag:";
+
+  const museumGrid = container.appendChild(document.createElement('div'));
+  museumGrid.classList.add("museum-pieces-grid");
+
+  const museumWorks = [
+    {
+      title: "Portret van Hendrik Spaan",
+      artist: "Floris Arntzenius (1864–1925)",
+      year: "1904",
+      medium: "Olieverf op paneel",
+      dimensions: "52 × 37,5 cm",
+      objnr: "0334805",
+      img: "./images/km_arntzenius_spaan.jpg",
+      url: "https://www.kunstmuseum.nl/nl/collectie/portret-van-h-spaan-0?origin=gm",
+      info: "Karaktervol portret van banketbakker en kunstverzamelaar Hendrik Spaan, getooid met hoge hoed en bril."
+    },
+    {
+      title: "Portret van Hendrik Spaan",
+      artist: "Willem de Zwart (1862–1931)",
+      year: "ca. 1895–1905",
+      medium: "Olieverf op doek",
+      dimensions: "59,5 × 46,5 cm",
+      objnr: "0334806",
+      img: "./images/km_zwart_spaan.jpg",
+      url: "https://www.kunstmuseum.nl/nl/collectie/portret-van-h-spaan",
+      info: "Intiem en virtuoos geschilderd portret in warme, donkere tonen door 'de Haagse Breitner' Willem de Zwart."
+    },
+    {
+      title: "Portret van mevr. A.P. Spaan-van Meeuwen",
+      artist: "Albert Neuhuys (1844–1914)",
+      year: "Eind 19e eeuw",
+      medium: "Olieverf op doek",
+      dimensions: "70 × 61 cm",
+      objnr: "0334807",
+      img: "./images/km_neuhuys_meeuwen.jpg",
+      url: "https://www.kunstmuseum.nl/nl/collectie/portret-van-mevrouw-ap-spaan-van-meeuwen",
+      info: "Voornaam portret van Antoinette Petronella van Meeuwen (1854–1904), echtgenote van Hendrik Spaan."
+    },
+    {
+      title: "Liggende koe",
+      artist: "Willem Maris (1844–1910)",
+      year: "ca. 1893",
+      medium: "Olieverf op doek",
+      dimensions: "58,2 × 82,6 cm",
+      objnr: "0334808",
+      img: "./images/km_maris_koe.jpg",
+      url: "https://www.kunstmuseum.nl/nl/collectie/liggende-koe",
+      info: "Gewaardeerd topstuk van de Haagse School met een koe aan de waterkant, badend in het Hollandse licht."
+    }
+  ];
+
+  for (let w of museumWorks) {
+    const card = museumGrid.appendChild(document.createElement('div'));
+    card.classList.add("museum-piece-card");
+
+    const imgBox = card.appendChild(document.createElement('div'));
+    imgBox.classList.add("museum-piece-img-box");
+    const img = imgBox.appendChild(document.createElement('img'));
+    img.src = w.img;
+    img.alt = w.title + " - " + w.artist;
+    img.title = "Klik om op Kunstmuseum.nl te bekijken";
+    img.addEventListener("click", () => window.open(w.url, '_blank', 'noopener,noreferrer'));
+
+    const body = card.appendChild(document.createElement('div'));
+    body.classList.add("museum-piece-body");
+
+    const artist = body.appendChild(document.createElement('div'));
+    artist.classList.add("museum-piece-artist");
+    artist.innerText = w.artist;
+
+    const pieceTitle = body.appendChild(document.createElement('div'));
+    pieceTitle.classList.add("museum-piece-title");
+    pieceTitle.innerText = w.title;
+
+    const meta = body.appendChild(document.createElement('ul'));
+    meta.classList.add("museum-piece-meta");
+    meta.innerHTML =
+      "<li><strong>Techniek:</strong> <span>" + w.medium + "</span></li>" +
+      "<li><strong>Afmetingen:</strong> <span>" + w.dimensions + "</span></li>" +
+      "<li><strong>Kunstmuseum nr:</strong> <span>" + w.objnr + "</span></li>";
+
+    const desc = body.appendChild(document.createElement('p'));
+    desc.classList.add("museum-piece-desc");
+    desc.innerText = w.info;
+
+    const btn = body.appendChild(document.createElement('a'));
+    btn.classList.add("museum-piece-btn");
+    btn.href = w.url;
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
+    btn.innerHTML = "🏛️ Kunstmuseum Collectie &#8599;";
+  }
+
+  // Overige gelegateerde werken
+  const overigeBox = container.appendChild(document.createElement('div'));
+  overigeBox.classList.add("overige-legaat-box");
+  overigeBox.innerHTML = "<h4>Overige werken uit het legaat Spaan (Museumdepot & Historie):</h4>" +
+    "<p>Naast de hierboven getoonde schilderijen omvatte het testamentaire legaat uit 1977 tevens:" +
+    "<ul>" +
+      "<li><strong>Jozef Israëls:</strong> Een ensemble van 9 sepia pentekeningen met gedichten opgedragen aan Hendrik Spaan, alsmede een portrettekening van een vrouw in zwart krijt (24 × 32 cm).</li>" +
+      "<li><strong>Marius van der Maarel:</strong> Schilderij <em>Moeder met kind</em> (olieverf op doek, 56 × 48 cm).</li>" +
+      "<li><strong>Charles van Wijk:</strong> Twee beelden (<em>Zittend naaktfiguur</em> en <em>Naaistertje</em>), die blijkens het museumrapport d.d. 6 juni 1977 helaas kort na het overlijden van mej. Spaan uit de woning aan de Laan van Meerdervoort zijn ontvreemd voordat de collectie veiliggesteld kon worden.</li>" +
+    "</ul></p>";
+
+  // PDF Documenten Archief
+  const docsContainer = container.appendChild(document.createElement('div'));
+  docsContainer.classList.add("archive-docs-container");
+  
+  const docsHeading = docsContainer.appendChild(document.createElement('h3'));
+  docsHeading.innerHTML = "📑 Origineel Museumarchief Kunstmuseum Den Haag (1972–1977)";
+  
+  const docsIntro = docsContainer.appendChild(document.createElement('p'));
+  docsIntro.innerText = "Inzage in de officiële museumcorrespondentie, inventarisatielijsten, taxaties en gemeentelijke raadsbesluiten rondom de aanvaarding van het legaat Spaan en de oprichting van het Stichting H. Spaan Fonds:";
+
+  const docsGrid = docsContainer.appendChild(document.createElement('div'));
+  docsGrid.classList.add("archive-docs-grid");
+
+  const pdfFiles = [
+    {
+      title: "Voorbereiding Legaat & Kunstwerkenlijst",
+      desc: "Bezoekverslag van drs. M.H. Josephus Jitta en wethouder F.D. Bastet, inventarisatielijst van kunstwerken ten huize van mej. Spaan en brieven van museumdirecteur L.J.F. Wijsenbeek.",
+      file: "./data/spaan/20170508_9.pdf",
+      tag: "Correspondentie 1972"
+    },
+    {
+      title: "Kennisgeving Notaris & Diefstalrapportage",
+      desc: "Kennisgeving notaris Mr. L.W.F.H. van Peski, voorstel tot aanvaarding door directeur Drs. Th. van Velzen, melding inbraak Van Wijk-sculpturen en ontvangstbewijs via Venduhuis.",
+      file: "./data/spaan/bn0339.pdf",
+      tag: "Overdracht 1977"
+    },
+    {
+      title: "Raadsvoorstel No. 365 & Statuten H. Spaan Fonds",
+      desc: "Voordracht van Burgemeester en Wethouders met exacte maten, historische verzekeringswaarden (fl. 7.500,- voor Arntzenius, fl. 40.000,- voor Maris) en de formele oprichtingsstatuten van het H. Spaan Fonds.",
+      file: "./data/spaan/20180502_7.pdf",
+      tag: "Raadsvoorstel & Statuten"
+    },
+    {
+      title: "Raadsbesluit Aanvaarding Gemeenteraad",
+      desc: "Officieel afschrift van het besluit van de Gemeenteraad van 's-Gravenhage d.d. 5 september 1977, ondertekend door burgemeester Schols en secretaris Gebel, tot definitieve aanvaarding van het legaat.",
+      file: "./data/spaan/bn0362.pdf",
+      tag: "Raadsbesluit 1977"
+    }
+  ];
+
+  for (let doc of pdfFiles) {
+    const card = docsGrid.appendChild(document.createElement('div'));
+    card.classList.add("archive-doc-card");
+
+    const header = card.appendChild(document.createElement('div'));
+    header.classList.add("archive-doc-header");
+
+    const icon = header.appendChild(document.createElement('span'));
+    icon.classList.add("archive-doc-icon");
+    icon.innerText = "📄";
+
+    const tag = header.appendChild(document.createElement('span'));
+    tag.classList.add("archive-doc-tag");
+    tag.innerText = doc.tag;
+
+    const cardTitle = card.appendChild(document.createElement('div'));
+    cardTitle.classList.add("archive-doc-title");
+    cardTitle.innerText = doc.title;
+
+    const cardDesc = card.appendChild(document.createElement('p'));
+    cardDesc.classList.add("archive-doc-desc");
+    cardDesc.innerText = doc.desc;
+
+    const btn = card.appendChild(document.createElement('a'));
+    btn.classList.add("archive-doc-btn");
+    btn.href = doc.file;
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
+    btn.innerHTML = "Bekijk PDF-document &#8599;";
+  }
 
   const h3_2 = container.appendChild(document.createElement('h3'));
   h3_2.innerText = "Particulier familie-erfgoed & Professionele fotografie";
